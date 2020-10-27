@@ -22,6 +22,8 @@ int main()
 	test_ft_isascii();
 	test_ft_isprint();
 	test_ft_atoi();
+	test_ft_toupper();
+	test_ft_tolower();
 	
 //	char str[] = "";
 //	char str2[] = "j";
