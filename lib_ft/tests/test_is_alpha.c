@@ -9,8 +9,8 @@
 
 void	test_ft_is_alpha(void)
 {
-	assert(1 == ft_is_alpha("aq"));
-	assert(1 == ft_is_alpha("A"));
-	assert(0 == ft_is_alpha("4"));
-	assert(0 == ft_is_alpha(""));
+	assert(1 == ft_is_alpha('a'));
+	assert(1 == ft_is_alpha('A'));
+	assert(0 == ft_is_alpha('4'));
+	assert(0 == ft_is_alpha(' '));
 }
