@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncmp.c                                       :+:    :+:            */
+/*   libft.h                                           :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/26 17:51:43 by julia         #+#    #+#                 */
-/*   Updated: 2020/10/26 19:31:16 by julia         ########   odam.nl         */
+/*   Created: 2020/10/26 16:48:18 by julia         #+#    #+#                 */
+/*   Updated: 2020/10/26 19:57:48 by julia         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIB_FT_H
+#define LIB_FT_H
 
-int		ft_strncmp(char *s1, char *s2, unsigned int n)
-{
-	unsigned	int i;
-	signed		int difference;
-	
-	i = 0;
-	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
-	{
-		if (s1[i] != s2[i])
-		{
-			difference = s1[i] - s2[i];
-			return (difference);
-		}
-		i++;
-	}
-	return (0);
-}
+int		ft_strlen(char *str);
+int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+int		ft_atoi(const char *str);
+
+#endif // LIB_FT_H

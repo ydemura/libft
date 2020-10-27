@@ -1,11 +1,11 @@
 //
 //  test_strlen.c
-//  lib_ft
+//  libft
 //
 //  Created by Julia on 27.10.2020.
 //
 
-#include "test_lib_ft.h"
+#include "test_libft.h"
 //#include "lib_ft.h"
 //#include <assert.h>
 

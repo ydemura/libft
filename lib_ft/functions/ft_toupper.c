@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_is_alpha.c                                      :+:    :+:            */
+/*   ft_toupper.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: julia <julia@student.codam.nl>               +#+                     */
+/*   By: ydemura <ydemura@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/26 17:25:29 by julia         #+#    #+#                 */
-/*   Updated: 2020/10/26 17:49:50 by julia         ########   odam.nl         */
+/*   Created: 2020/08/22 09:04:16 by ydemura       #+#    #+#                 */
+/*   Updated: 2020/08/22 09:55:08 by ydemura       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lib_ft.h"
+#include "libft.h"
 
-int		ft_is_alpha(int c)
+//     If the argument is a lower-case letter, the toupper() function
+//returns the corresponding upper-case
+//letter if there is one; otherwise, the argument is returned unchanged.
+
+int		ft_toupper(int c)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	return (0);
 }

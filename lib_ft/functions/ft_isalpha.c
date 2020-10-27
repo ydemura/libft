@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_is_digit.c                                      :+:    :+:            */
+/*   ft_isalpha.c                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/26 17:51:43 by julia         #+#    #+#                 */
-/*   Updated: 2020/10/26 19:31:16 by julia         ########   odam.nl         */
+/*   Created: 2020/10/26 17:25:29 by julia         #+#    #+#                 */
+/*   Updated: 2020/10/26 17:49:50 by julia         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lib_ft.h"
+#include "libft.h"
 
-int		ft_is_digit(int c)
+int		ft_isalpha(int c)
 {
-	return (c >= '0' && c <= '9');
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }

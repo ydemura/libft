@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   lib_ft.h                                           :+:    :+:            */
+/*   ft_isprint.c                                      :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: julia <julia@student.codam.nl>               +#+                     */
+/*   By: ydemura <ydemura@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/26 16:48:18 by julia         #+#    #+#                 */
-/*   Updated: 2020/10/26 19:57:48 by julia         ########   odam.nl         */
+/*   Created: 2020/08/22 09:04:16 by ydemura       #+#    #+#                 */
+/*   Updated: 2020/08/22 09:55:08 by ydemura       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <string.h>
-//#include <stdlib.h>
+#include "libft.h"
 
-int		ft_strlen(char *str);
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
-int		ft_is_alpha(int c);
-int		ft_is_digit(int c);
+int		ft_isprint(int c)
+{
+	return(c >= 32 && c <= 126);
+}

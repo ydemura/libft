@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.c                                             :+:    :+:            */
+/*   ft_isdigit.c                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
@@ -10,25 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test_libft.h"
+#include "libft.h"
 
-int main()
+int		ft_isdigit(int c)
 {
-	test_ft_strlen();
-	test_ft_isalpha();
-	test_ft_strncmp();
-	test_ft_isdigit();
-	test_ft_isalnum();
-	test_ft_isascii();
-	test_ft_isprint();
-	test_ft_atoi();
-	
-//	char str[] = "";
-//	char str2[] = "j";
-//	int n = 1;
-//	printf("function: %i\nmy: %i\n", strncmp(str, str2, n), ft_strncmp(str, str2, n));
-		
-	
-//	printf("function: %i\nmy: %i\n", atoi(" 	-015fgfdf"), ft_atoi("	 	-015fdgd"));
-	return (0);
+	return (c >= '0' && c <= '9');
 }
