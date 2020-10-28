@@ -13,6 +13,8 @@
 #ifndef LIB_FT_H
 #define LIB_FT_H
 
+#include <sys/types.h>
+
 int		ft_strlen(char *str);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 int		ft_isalpha(int c);
@@ -23,6 +25,6 @@ int		ft_isprint(int c);
 int		ft_atoi(const char *str);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-char	*strnstr(const char *haystack, const char *needle); //, size_t len);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 #endif // LIB_FT_H

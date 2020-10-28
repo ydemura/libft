@@ -18,3 +18,4 @@ void	test_ft_isprint(void);
 void	test_ft_atoi(void);
 void	test_ft_toupper(void);
 void	test_ft_tolower(void);
+void	test_ft_strnstr(void);

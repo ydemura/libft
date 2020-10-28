@@ -29,6 +29,7 @@
 		A3A66A952548AA4400423CEB /* ft_tolower.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A66A942548AA4400423CEB /* ft_tolower.c */; };
 		A3A66A982548AAC200423CEB /* test_ft_tolower.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A66A972548AAC200423CEB /* test_ft_tolower.c */; };
 		A3A66A9B2548ADC600423CEB /* ft_strnstr.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A66A9A2548ADC600423CEB /* ft_strnstr.c */; };
+		A3A66A9E25499C8400423CEB /* test_ft_strnstr.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A66A9D25499C8400423CEB /* test_ft_strnstr.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +70,7 @@
 		A3A66A942548AA4400423CEB /* ft_tolower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_tolower.c; sourceTree = "<group>"; };
 		A3A66A972548AAC200423CEB /* test_ft_tolower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_tolower.c; sourceTree = "<group>"; };
 		A3A66A9A2548ADC600423CEB /* ft_strnstr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strnstr.c; sourceTree = "<group>"; };
+		A3A66A9D25499C8400423CEB /* test_ft_strnstr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_strnstr.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				A3A66A8325488FFE00423CEB /* test_ft_atoi.c */,
 				A3A66A912548A93900423CEB /* test_toupper.c */,
 				A3A66A972548AAC200423CEB /* test_ft_tolower.c */,
+				A3A66A9D25499C8400423CEB /* test_ft_strnstr.c */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				A3A66A692548642400423CEB /* ft_isascii.c in Sources */,
 				A3A66A7B25486B6A00423CEB /* ft_isprint.c in Sources */,
 				A3A66A4C254823A000423CEB /* test_isalpha.c in Sources */,
+				A3A66A9E25499C8400423CEB /* test_ft_strnstr.c in Sources */,
 				A3A66A5625482DB000423CEB /* test_ft_strncmp.c in Sources */,
 				A3A66A9B2548ADC600423CEB /* ft_strnstr.c in Sources */,
 				A3A66A5D2548530100423CEB /* test_ft_isdigit.c in Sources */,
