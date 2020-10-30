@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strlen.c                                        :+:    :+:            */
+/*   ft_memcpy.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
@@ -12,14 +12,9 @@
 
 #include "libft.h"
 
-int		ft_strlen(const char *str)
-{
-	int i;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+{
+	return 0;
 }

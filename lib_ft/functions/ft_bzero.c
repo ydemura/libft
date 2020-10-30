@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strlen.c                                        :+:    :+:            */
+/*   ft_bzero.c                                         :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
@@ -12,14 +12,16 @@
 
 #include "libft.h"
 
-int		ft_strlen(const char *str)
+void	ft_bzero(void *s, size_t n)
 {
-	int i;
+	unsigned int i;
+	unsigned char *temp;
 
+	temp = (unsigned char*)s;
 	i = 0;
-	while (str[i] != '\0')
+	while (i < n && n != 0)
 	{
+		temp[i] = 0;
 		i++;
 	}
-	return (i);
 }

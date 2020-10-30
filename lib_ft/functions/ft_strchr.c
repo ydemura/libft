@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strlen.c                                        :+:    :+:            */
+/*   ft_strchr.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
@@ -12,14 +12,22 @@
 
 #include "libft.h"
 
-int		ft_strlen(const char *str)
+char	*ft_strchr(const char *s, int c)
 {
 	int i;
-
+	
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
+		if (s[i] == c)
+		{
+			return (&s[i]);
+		}
 		i++;
 	}
-	return (i);
+	if (s[i] == '\0' && c == '\0')
+	{
+		return (&s[i]);
+	}
+	return (NULL);
 }

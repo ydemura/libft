@@ -19,3 +19,7 @@ void	test_ft_atoi(void);
 void	test_ft_toupper(void);
 void	test_ft_tolower(void);
 void	test_ft_strnstr(void);
+void	test_ft_strchr(void);
+void	test_ft_strrchr(void);
+void	test_ft_memset(void);
+void	test_ft_bzero(void);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strlen.c                                        :+:    :+:            */
+/*   ft_memset.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
@@ -12,14 +12,18 @@
 
 #include "libft.h"
 
-int		ft_strlen(const char *str)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	int i;
+	unsigned int i;
+	unsigned char *temp;
 
+	temp = (unsigned char*)b;
 	i = 0;
-	while (str[i] != '\0')
+	while (i < len)
 	{
+		temp[i] = c;
 		i++;
+		len--;
 	}
-	return (i);
+	return (b);
 }
