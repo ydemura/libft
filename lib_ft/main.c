@@ -25,6 +25,24 @@ int main()
 	test_ft_bzero();
 	test_ft_memcpy();
 	test_ft_memccpy();
+	test_ft_memmove();
+	
+//	char dest[] = "123456789";
+//	char src[] = "abcde";
+//	char dest2[] = "123456789";
+//	char src2[] = "abcde";
+	
+//	char string[] = "1234567890";
+//	char *dest = &string[1];
+//	char *src = &string[5];
+
+	//printf("my f: %s\n", ft_memmove(dest, src, 7));
+//	printf("f: %s\n", memmove(dest, src, 7));
+
+	
+//	printf("original f: %s\n", memmove(dest2, src2, 6));
+//	printf("\nmy: %s\noriginal: %s\n\n", dest, dest2);
+	
 	
 //	char string1[] = "123456789";
 //	char another_string1[] = "abcde";
