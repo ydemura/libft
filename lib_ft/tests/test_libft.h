@@ -23,3 +23,4 @@ void	test_ft_strchr(void);
 void	test_ft_strrchr(void);
 void	test_ft_memset(void);
 void	test_ft_bzero(void);
+void	test_ft_memcpy(void);

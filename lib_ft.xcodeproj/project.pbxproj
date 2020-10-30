@@ -39,6 +39,7 @@
 		A3A66AE0254C1F3600423CEB /* test_ft_isprint.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A66AD2254C1F3500423CEB /* test_ft_isprint.c */; };
 		A3A66AE5254C217200423CEB /* test_ft_strrchr.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A66AE4254C217200423CEB /* test_ft_strrchr.c */; };
 		A3A66AE8254C218200423CEB /* ft_strrchr.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A66AE7254C218200423CEB /* ft_strrchr.c */; };
+		A3A66AEC254C432800423CEB /* test_ft_memcpy.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A66AEB254C432800423CEB /* test_ft_memcpy.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +90,7 @@
 		A3A66AD2254C1F3500423CEB /* test_ft_isprint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_ft_isprint.c; sourceTree = "<group>"; };
 		A3A66AE4254C217200423CEB /* test_ft_strrchr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_ft_strrchr.c; sourceTree = "<group>"; };
 		A3A66AE7254C218200423CEB /* ft_strrchr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strrchr.c; sourceTree = "<group>"; };
+		A3A66AEB254C432800423CEB /* test_ft_memcpy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = test_ft_memcpy.c; path = ../../../../Documents/test_ft_memcpy.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				A3A66A4225481EE600423CEB /* test_libft.h */,
 				A3A66ACF254C1F3500423CEB /* test_strlen.c */,
 				A3A66AD1254C1F3500423CEB /* test_toupper.c */,
+				A3A66AEB254C432800423CEB /* test_ft_memcpy.c */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				A3A66AD5254C1F3600423CEB /* test_ft_strnstr.c in Sources */,
 				A3A66ABC254C1F2200423CEB /* ft_isdigit.c in Sources */,
 				A3A66AE8254C218200423CEB /* ft_strrchr.c in Sources */,
+				A3A66AEC254C432800423CEB /* test_ft_memcpy.c in Sources */,
 				A3A66AC2254C1F2200423CEB /* ft_tolower.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
