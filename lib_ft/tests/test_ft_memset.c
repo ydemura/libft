@@ -15,8 +15,12 @@
 
 void	test_ft_memset(void)
 {
-	void *ptr = malloc(3);
-	
-	assert(ft_memset(ptr, '@', 1) == memset(ptr, '@', 1));
-	assert(ft_memset(ptr, '@', 3) == memset(ptr, '@', 3));
+	char string[] = "aaaaaaaaaaaaa";
+	ft_memset(string, '@', 5);
+	assert(string[0] == '@');
+	assert(string[1] == '@');
+	assert(string[2] == '@');
+	assert(string[3] == '@');
+	assert(string[4] == '@');
+	assert(string[5] == 'a');
 }
