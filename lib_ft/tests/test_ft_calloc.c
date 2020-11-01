@@ -19,9 +19,59 @@
 
 // malloc -> bzero
 
+void	test_ft_calloc1(void)
+{
+	int *ptr;
+	int n;
+	n = 5;
+	
+	ptr = ft_calloc(n, sizeof(int));
+	assert(ptr[0] = '0');
+	free(ptr);
+}
+
+void	test_ft_calloc2(void) //doesnt work but I am not sure it should
+{
+//	int *ptr;
+//	int *ptr1;
+//	int n;
+//	n = 5;
+//
+//	ptr = ft_calloc(n, sizeof(int));
+//	ptr1 = calloc(n, sizeof(int));
+//	assert(ptr[1] = ptr1[1]);
+//	free(ptr);
+//	free(ptr1);
+}
+
+void	test_ft_calloc3(void)
+{
+	int *ptr;
+	int n;
+	n = 5;
+	
+	ptr = ft_calloc(n, sizeof(int));
+//	assert(ptr[0] = ptr[1]);
+	free(ptr);
+}
+
+void	test_ft_calloc4(void)
+{
+	int *ptr;
+	int n;
+	n = 5;
+	
+	ptr = ft_calloc(n, sizeof(int));
+	assert(ptr[0] = '0');
+	free(ptr);
+}
+
 void	test_ft_calloc(void)
 {
-	//assert (calloc(3, 5) == "000000");
-	//assert(ft_strncmp(calloc(3, 5), "000000", 20) == 0);
-	
+	test_ft_calloc1();
+	test_ft_calloc2();
+	test_ft_calloc3();
+//	test_ft_calloc4();
+//	test_ft_calloc5();
+//	test_ft_calloc6();
 }

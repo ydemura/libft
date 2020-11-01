@@ -7,6 +7,7 @@
 #include <ctype.h> //for digit
 #include <xlocale.h> //for atoi
 #include <stdlib.h> //for memory allocation + atoi
+#include <unistd.h>
 
 void	test_ft_strlen(void);
 void	test_ft_strncmp(void);

@@ -161,6 +161,7 @@
 		A3A66A3B25481DBB00423CEB /* functions */ = {
 			isa = PBXGroup;
 			children = (
+				A3A66A3F25481E1000423CEB /* libft.h */,
 				A3A66AB2254C1F2200423CEB /* ft_atoi.c */,
 				A3A66AA6254C1F2200423CEB /* ft_bzero.c */,
 				0D061925254EB831008C91AD /* ft_calloc.c */,
@@ -184,7 +185,6 @@
 				A3A66AE7254C218200423CEB /* ft_strrchr.c */,
 				A3A66AB3254C1F2200423CEB /* ft_tolower.c */,
 				A3A66AAB254C1F2200423CEB /* ft_toupper.c */,
-				A3A66A3F25481E1000423CEB /* libft.h */,
 			);
 			path = functions;
 			sourceTree = "<group>";
@@ -192,6 +192,7 @@
 		A3A66A4125481EBF00423CEB /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				A3A66A4225481EE600423CEB /* test_libft.h */,
 				A3A66ACE254C1F3500423CEB /* test_ft_atoi.c */,
 				A3A66AC5254C1F3500423CEB /* test_ft_bzero.c */,
 				0D06192D254EBAC3008C91AD /* test_ft_calloc.c */,
@@ -210,7 +211,6 @@
 				A3A66AE4254C217200423CEB /* test_ft_strrchr.c */,
 				A3A66AD0254C1F3500423CEB /* test_ft_tolower.c */,
 				A3A66AC9254C1F3500423CEB /* test_isalpha.c */,
-				A3A66A4225481EE600423CEB /* test_libft.h */,
 				A3A66ACF254C1F3500423CEB /* test_strlen.c */,
 				A3A66AD1254C1F3500423CEB /* test_toupper.c */,
 				0D061931254EBB2B008C91AD /* test_ft_memcmp.c */,

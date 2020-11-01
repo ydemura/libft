@@ -32,10 +32,23 @@ int main()
 	test_ft_strlcat();
 	test_ft_calloc();
 	
-	
-	printf("%i\n", ft_strncmp(calloc(10, sizeof(int)), "0", 20));
-	
-	
+	int *ptr;
+	int n;
+	n = 5;
+
+	ptr = ft_calloc(n, sizeof(int));
+//	printf("%i", ptr[0]);
+	int i;
+	i = 0;
+	while (i <= n) // when i < n all works, when i<= n adding numbers after 000
+	{
+		printf("%i", ptr[i]);
+		i++;
+	}
+
+	free(ptr);
+
+//
 //	char dst[50] = "aaaaa"; // 5
 //	char src[] = "123456789"; // 9
 //	int destsize = 15;
