@@ -33,7 +33,7 @@ int main()
 	test_ft_calloc();
 	test_ft_strdup();
 	test_ft_substr();
-	
+	test_ft_strjoin();
 	
 	
 	
@@ -43,7 +43,7 @@ int main()
 //	int start = 4; //it is INDEX (ind 4 == int 5)
 //	int len = 4;
 //	sub_str = ft_substr(s, start, len);
-//	
+//
 //	printf("%s\n%s\n", s, sub_str);
 	
 //	char str[] = "testme";

@@ -34,3 +34,4 @@ void	test_ft_strlcat(void);
 void	test_ft_calloc(void);
 void	test_ft_strdup(void);
 void	test_ft_substr(void);
+void	test_ft_strjoin(void);

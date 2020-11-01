@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_substr.c                                        :+:    :+:            */
+/*   ft_strjoin.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ydemura <ydemura@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
@@ -11,23 +11,32 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h> //for printf
-#include <stdlib.h> //for malloc
+#include <stdlib.h>
 
-
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char				*sub_str;
-	unsigned	int		i;
-	
+	char	*new_str;
+	int		len_s1;
+	int		len_s2;
+	int		i;
+	int		j;
+
+	len_s1 = ft_strlen(s1);
+	len_s2 = ft_strlen(s2);
 	i = 0;
-	sub_str = malloc((len + 1) * sizeof(char));
-	while (i < len)
+	j = 0;
+	new_str = (char *)malloc(((len_s1 + len_s2) + 1) * sizeof(char));
+	while (i < len_s1)
 	{
-		sub_str[i] = s[start];
+		new_str[i] = s1[i];
 		i++;
-		start++;
 	}
-	sub_str[i] = '\0';
-	return (sub_str);
+	while (j < len_s2)
+	{
+		new_str[i] = s2[j];
+		i++;
+		j++;
+	}
+	new_str[i] = '\0';
+	return (new_str);
 }
