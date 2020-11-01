@@ -33,20 +33,17 @@ int main()
 	test_ft_calloc();
 	test_ft_strdup();
 	
-	int *ptr;
-	int n;
-	n = 6;
-
-	ptr = ft_calloc(n, sizeof(ptr));
-	int i;
-	i = 0;
-	while (i < n + 2) // when i < n all works, when i<= n adding numbers after 000
-	{
-		printf("%i\n", ptr[i]);
-		i++;
-	}
-
-	free(ptr);
+//	int *ptr;
+//	int *ptr1;
+//	int n;
+//	n = 5;
+//
+//	ptr = ft_calloc(n, sizeof(ptr));
+//	ptr1 = calloc(n, sizeof(ptr1));
+//	assert(ptr[0] == ptr1[8]);
+//	printf("%i\n%i\n", ptr[0], ptr1[0]);
+//	free(ptr);
+//	free(ptr1);
 
 //
 //	char dst[50] = "aaaaa"; // 5
