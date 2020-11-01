@@ -33,6 +33,23 @@ int main()
 	test_ft_calloc();
 	test_ft_strdup();
 	
+//	char str[] = "testme";
+//	char *test = str;
+//	char *afterf_test;
+//	afterf_test = strdup(test);
+//
+//	printf("%s\n%s\n", test, afterf_test);
+//
+//	free(afterf_test);
+	
+//	char str[50] = "hk";
+//	char *test = str;
+//	test = ft_strdup(test);
+//
+//	printf("%s\n", test);
+//	printf("%s\n", str);
+//
+	
 //	int *ptr;
 //	int *ptr1;
 //	int n;

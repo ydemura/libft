@@ -12,7 +12,34 @@
 
 #include "test_libft.h"
 
+void	test_ft_strdup1(void)
+{
+	char str[] = "testme";
+	char *test = str;
+	char *after_test;
+	after_test = ft_strdup(test);
+	
+	assert(ft_strncmp(after_test, test, 20) == 0);
+	assert(ft_strlen(after_test) == ft_strlen(test));
+	assert(after_test[ft_strlen(after_test + 1)] == test[ft_strlen(test + 1)]);
+	free(after_test);
+}
+
+void	test_ft_strdup2(void)
+{
+	char str[] = "";
+	char *test = str;
+	char *after_test;
+	after_test = ft_strdup(test);
+	
+	assert(ft_strncmp(after_test, test, 20) == 0);
+	assert(ft_strlen(after_test) == ft_strlen(test));
+	assert(after_test[ft_strlen(after_test)] == test[ft_strlen(test)]);
+	free(after_test);
+}
+
 void	test_ft_strdup(void)
 {
-	
+	test_ft_strdup1();
+	test_ft_strdup2();
 }

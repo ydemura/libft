@@ -42,6 +42,6 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src,
 size_t	ft_strlcat(char *restrict dst, const char *restrict src,
 	size_t dstsize);
 void	*ft_calloc(size_t count, size_t size);
-char	*strdup(const char *s1);
+char	*ft_strdup(const char *s1);
 
 #endif
