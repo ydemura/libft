@@ -17,8 +17,8 @@
 void	test_ft_bzero(void)
 {
 	char string[] = "aaaaaaaaaaaaa";
-	ft_bzero(string, 2);
+	ft_bzero(string, 4);
 	assert(string[0] == 0);
 	assert(string[1] == 0);
-	assert(string[2] == 'a');
+	assert(string[2] == 0);
 }

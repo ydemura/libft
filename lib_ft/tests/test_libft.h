@@ -32,3 +32,4 @@ void	test_ft_memcmp(void);
 void	test_ft_strlcpy(void);
 void	test_ft_strlcat(void);
 void	test_ft_calloc(void);
+void	test_ft_strdup(void);

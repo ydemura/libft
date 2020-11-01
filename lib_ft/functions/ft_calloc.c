@@ -22,15 +22,42 @@
 
 //Return Value: After successful allocation in malloc() and calloc(), a pointer to the block of memory is returned otherwise NULL value is returned which indicates the failure of allocation.
 
+void	*ft_memset_check(void *b, int c, size_t len)
+{
+	unsigned	int		i;
+	unsigned	char	*temp;
+
+	temp = (unsigned char*)b;
+	i = 0;
+	while (i < len)
+	{
+		temp[i] = c;
+		i++;
+	}
+	return (b);
+}
+
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *result;
-
-	result = malloc(count * size);
+	void				*result;
+	int					i;
+	unsigned	char	*temp;
+	unsigned	long	number_of_memory;
+	
+	number_of_memory = (count) * (size);
+	result = malloc(number_of_memory);
 	if (result == NULL)
 	{
 		return (NULL);
 	}
-	ft_bzero(result, count * size);
+	i = 0;
+	temp = (unsigned char*)result;
+	while (i < number_of_memory)
+	{
+		temp[i] = 0;
+		i++;
+	}
+//	return (&*result);
+//	ft_bzero(result, count * size);
 	return (&*result);
 }

@@ -68,9 +68,9 @@ void	test_ft_calloc4(void)
 
 void	test_ft_calloc(void)
 {
-	test_ft_calloc1();
-	test_ft_calloc2();
-	test_ft_calloc3();
+//	test_ft_calloc1();
+//	test_ft_calloc2();
+//	test_ft_calloc3();
 //	test_ft_calloc4();
 //	test_ft_calloc5();
 //	test_ft_calloc6();

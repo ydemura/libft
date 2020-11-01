@@ -31,18 +31,18 @@ int main()
 	test_ft_strlcpy();
 	test_ft_strlcat();
 	test_ft_calloc();
+	test_ft_strdup();
 	
 	int *ptr;
 	int n;
-	n = 5;
+	n = 6;
 
-	ptr = ft_calloc(n, sizeof(int));
-//	printf("%i", ptr[0]);
+	ptr = ft_calloc(n, sizeof(ptr));
 	int i;
 	i = 0;
-	while (i <= n) // when i < n all works, when i<= n adding numbers after 000
+	while (i < n + 2) // when i < n all works, when i<= n adding numbers after 000
 	{
-		printf("%i", ptr[i]);
+		printf("%i\n", ptr[i]);
 		i++;
 	}
 
