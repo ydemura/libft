@@ -11,29 +11,23 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h> //for printf
 #include <stdlib.h> //for malloc
-char	*ft_strdup(const char *s1)
+
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int len;
-	int i;
-	char *s2;
+	char				*sub_str;
+	unsigned	int		i;
 	
 	i = 0;
-	len = 0;
-	while (s1[len] != '\0')
+	sub_str = malloc((len + 1) * sizeof(char));
+	while (i < len)
 	{
-		len++;
-	}
-	s2 = (char *)malloc((len + 1) * sizeof(char));
-	if (s2 == NULL)
-	{
-		return (NULL);
-	}
-	while (s1[i] != '\0')
-	{
-		s2[i] = s1[i];
+		sub_str[i] = s[start];
 		i++;
+		start++;
 	}
-	s2[i] = '\0';
-	return (s2);
+	sub_str[i] = '\0';
+	return (sub_str);
 }

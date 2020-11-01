@@ -23,15 +23,28 @@ int main()
 	test_ft_strrchr();
 	test_ft_memset();
 	test_ft_bzero();
-//	test_ft_memcpy();
-//	test_ft_memccpy();
-//	test_ft_memmove();
+	test_ft_memcpy();
+	test_ft_memccpy();
+	test_ft_memmove();
 	test_ft_memchr();
 	test_ft_memcmp();
 	test_ft_strlcpy();
 	test_ft_strlcat();
 	test_ft_calloc();
 	test_ft_strdup();
+	test_ft_substr();
+	
+	
+	
+	
+	
+//	char s[] = "1234test9";
+//	char *sub_str;
+//	int start = 4; //it is INDEX (ind 4 == int 5)
+//	int len = 4;
+//	sub_str = ft_substr(s, start, len);
+//	
+//	printf("%s\n%s\n", s, sub_str);
 	
 //	char str[] = "testme";
 //	char *test = str;
