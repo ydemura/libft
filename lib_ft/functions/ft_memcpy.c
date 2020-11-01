@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	unsigned int i;
-	unsigned char *destination;
-	unsigned char *sorce;
+	unsigned	int		i;
+	unsigned	char	*destination;
+	unsigned	char	*sorce;
 
 	destination = (unsigned char *)dst;
 	sorce = (unsigned char *)src;

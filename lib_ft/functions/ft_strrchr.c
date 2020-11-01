@@ -14,8 +14,10 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int len;
-	
+	char	*str;
+	int		len;
+
+	str = (char *)s;
 	len = 0;
 	while (s[len] != '\0')
 	{
@@ -23,13 +25,13 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (s[len + 1] == '\0' && c == '\0')
 	{
-		return (&s[len]);
+		return (&str[len]);
 	}
 	while (len > 0)
 	{
 		if (s[len] == c)
 		{
-			return (&s[len]);
+			return (&str[len]);
 		}
 		len--;
 	}

@@ -23,9 +23,108 @@ int main()
 	test_ft_strrchr();
 	test_ft_memset();
 	test_ft_bzero();
-	test_ft_memcpy();
-	test_ft_memccpy();
-	test_ft_memmove();
+//	test_ft_memcpy();
+//	test_ft_memccpy();
+//	test_ft_memmove();
+	test_ft_memchr();
+	test_ft_memcmp();
+	test_ft_strlcpy();
+	test_ft_strlcat();
+	test_ft_calloc();
+	
+	
+	printf("%i\n", ft_strncmp(calloc(10, sizeof(int)), "0", 20));
+	
+	
+//	char dst[50] = "aaaaa"; // 5
+//	char src[] = "123456789"; // 9
+//	int destsize = 15;
+//
+//	char dst1[50] = "aaaaa"; // 5
+//	char src1[] = "123456789"; // 9
+//	int destsize1 = 15;
+	
+//	char dst[50] = "destination"; //11
+//	char src[] = "copyit"; //6
+//	int destsize = 0;
+//	char dst1[50] = "destination"; //11
+//	char src1[] = "copyit"; //6
+//	int destsize1 = 0;
+	
+	
+//	assert(ft_strlcat(dst, src, destsize) == 6);
+//	assert(ft_strncmp(dst, "destination", 20) == 0);
+	
+//	printf("f: %lu\n", strlcat(dst, src, destsize));
+//	printf("my: %lu\n", ft_strlcat(dst1, src1, destsize1));
+//	printf("%s\n%s\n", dst, dst1);
+	
+	
+//	char dst[50] = "destination"; //11
+//	char src[50] = "copyit"; //6
+//	int destsize = 0;
+
+//	assert(strlcat(dst, src, destsize) == 17);
+//	assert(ft_strncmp(dst, "destinationcopyit", 20) == 0);
+
+//	printf("%lu\n", strlcat(dst, src, destsize));
+//	printf("%s\n", dst);
+	
+	
+	
+	
+//	char dst[] = "dest";
+//	char src[] = "checkthis";
+//	int dstsize = 4;
+//
+//	ft_strlcpy(dst, src, dstsize);
+//	printf("%lu\n", ft_strlcpy(dst, src, dstsize));
+//	printf("%s\n", dst);
+
+//	char dst[] = "";
+//	char src[] = "check";
+//	int dstsize = 0;
+//
+//	ft_strlcpy(dst, src, dstsize);
+//	assert(ft_strncmp(dst, "", 10) == 0);
+//
+//	printf("%lu\n", ft_strlcpy(dst, src, dstsize));
+//	printf("%s\n", dst);
+
+//	char dst[] = "destination";
+//	char src[] = "copythis";
+//	int dstsize = 11;
+
+//	char dst[] = "";
+//	char src[] = "check";
+//	int dstsize = 0;
+
+//	printf("%lu\n", strlcpy(dst, src, dstsize));
+//	printf("%s\n", dst);
+
+	
+	
+	
+//	char s1[] = "abbbbb";
+//	char s2[] = "Abbbbb";
+//	int n = 4;
+//
+//	printf("fu: %i\nmy: %i\n", memcmp(s1, s2, n), ft_memcmp(s1, s2, n));
+	
+	
+	
+//	char s1[] = "";
+//	char s2[] = "";
+//	int n = 4;
+
+//	printf("%i\n", memcmp(s1, s2, n));
+	
+	
+	
+//	char s[] = "testme";
+//	printf("%p\n", ft_memchr(s, 'm', 0));
+//	printf("%p\n", memchr(s, 'm', 0));
+	
 	
 //	char dest[] = "123456789";
 //	char src[] = "abcde";
@@ -36,7 +135,7 @@ int main()
 //	char *dest = &string[1];
 //	char *src = &string[5];
 
-	//printf("my f: %s\n", ft_memmove(dest, src, 7));
+//	printf("my f: %s\n", ft_memmove(dest, src, 7));
 //	printf("f: %s\n", memmove(dest, src, 7));
 
 	
