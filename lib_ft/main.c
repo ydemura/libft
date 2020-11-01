@@ -34,6 +34,7 @@ int main()
 	test_ft_strdup();
 	test_ft_substr();
 	test_ft_strjoin();
+	test_ft_strtrim();
 	
 	
 	

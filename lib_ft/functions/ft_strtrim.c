@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_substr.c                                        :+:    :+:            */
+/*   ft_strtrim.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ydemura <ydemura@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
@@ -11,27 +11,11 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h> //for printf
-#include <stdlib.h> //for malloc
+#include <stdlib.h>
 
-
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char				*sub_str;
-	unsigned	int		i;
 	
-	i = 0;
-	sub_str = malloc((len + 1) * sizeof(char));
-	if (sub_str == NULL)
-	{
-		return (NULL);
-	}
-	while (i < len)
-	{
-		sub_str[i] = s[start];
-		i++;
-		start++;
-	}
-	sub_str[i] = '\0';
-	return (sub_str);
+	
+	return (0);
 }
