@@ -15,14 +15,41 @@
 
 #include "test_libft.h"
 
-void	test_ft_strtrim(void)
+void	test_ft_strtrim1(void)
 {
-	char s1[] = "aa11aa";
-	char set[] = "11";
+	char s1[] = "tesNO WmeNOWowow";
+	char set[] = "NOW";
 	
 	char *new_str;
 	new_str = ft_strtrim(s1, set);
 
-	//printf("%s\n%s\n%s\n", s1, s2, new_str);
-	//assert(ft_strncmp(new_str, "11", 10) == 0);
+	//printf("string: %s\nset: %s\nafter f: %s\n", s1, set, new_str);
+	assert(ft_strncmp(new_str, set, 10) == 0);
+}
+
+void	test_ft_strtrim2(void)
+{
+	char s1[50] = "tesNO WmeNOWowow";
+	char set[50] = "gggg";
+	
+	char *new_str;
+	new_str = ft_strtrim(s1, set);
+	assert(new_str == NULL);
+}
+
+void	test_ft_strtrim3(void)
+{
+	char s1[50] = "";
+	char set[50] = "gg";
+	
+	char *new_str;
+	new_str = ft_strtrim(s1, set);
+	assert(new_str == NULL);
+}
+
+void	test_ft_strtrim(void)
+{
+	test_ft_strtrim1();
+	test_ft_strtrim2();
+	test_ft_strtrim3();
 }

@@ -23,7 +23,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
 	j = dst_len;
-	while (i < dstsize && src != '\0')
+	while (i < dstsize && src != 0) //what was the issue when src != '\0'
 	{
 		dst[j] = src[i];
 		i++;

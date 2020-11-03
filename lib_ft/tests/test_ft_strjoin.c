@@ -22,7 +22,7 @@ void	test_ft_strjoin(void)
 	char *new_str;
 	new_str = ft_strjoin(s1, s2);
 
-	printf("%s\n%s\n%s\n", s1, s2, new_str);
+//	printf("%s\n%s\n%s\n", s1, s2, new_str);
 	assert(ft_strncmp(new_str, "aaabbb", 10) == 0);
 }
 
