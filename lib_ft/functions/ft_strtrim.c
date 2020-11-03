@@ -13,26 +13,67 @@
 #include "libft.h"
 #include <stdlib.h>
 
+int		ft_start_search(char const *s1, char const *set)
+{
+	int i;
+	int start;
+	
+	i = 0;
+	start = 0;
+	while (s1[i] != '\0')
+	{
+		if (ft_memchr(set, s1[i], ft_strlen(set)) == NULL)
+		{
+			start = i;
+			return (start);
+		}
+		i++;
+	}
+	return (0);
+}
+
+int		ft_end_search(char const *s1, char const *set)
+{
+	int i;
+	int end;
+	int len_s1;
+	
+	i = 0;
+	end = 0;
+	len_s1 = ft_strlen(s1);
+	while (i < len_s1)
+	{
+		if (ft_memchr(set, s1[len_s1 - 1], ft_strlen(set)) == NULL)
+		{
+			end = len_s1;
+			return (end);
+		}
+		len_s1--;
+	}
+	return (0);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		i;
-	int		len_set;
-	int		len_s1;
-	char	*start_set_in_s1;
-	char	*s2;
-
-	i = 0;
-	len_set = ft_strlen(set);
-	len_s1 = ft_strlen(s1);
-	start_set_in_s1 = ft_strnstr(s1, set, len_s1);
-	s2 = (char *)malloc((len_set + 1) * sizeof(char));
-	if (start_set_in_s1 == NULL || s2 == NULL)
+	int				i;
+	int				len_s2;
+	char			*s2;
+	int				start;
+	int				end;
+	
+	start = ft_start_search(s1, set);
+	end = ft_end_search(s1, set);
+	len_s2 = end - start;
+	s2 = (char *)malloc((len_s2 + 1) * sizeof(char));
+	if (s2 == NULL)
 	{
 		return (NULL);
 	}
-	while (start_set_in_s1[i] == set[i])
+	i = 0;
+	while (start < end)
 	{
-		s2[i] = start_set_in_s1[i];
+		s2[i] = s1[start];
+		start++;
 		i++;
 	}
 	s2[i] = '\0';
