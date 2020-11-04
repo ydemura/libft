@@ -35,35 +35,45 @@ int		ft_delimiter_counter(char const *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	int			delimeter_n;
-	int 		a;
-	char		**array_of_substr;
+	int 		next_result_index;
+	char		**results;
 	char		*substring;
 	const char	*start;
 	const char  *current_ptr;
 	size_t		len_substr;
 
 	delimeter_n = ft_delimiter_counter(s, c);
-	array_of_substr = (char **)malloc((delimeter_n + 2) * sizeof(char *));
-	if (array_of_substr == NULL)
+	results = (char **)malloc((delimeter_n + 2) * sizeof(char *));
+	if (results == NULL)
 	{
 		return (NULL);
 	}
 	start = s;
 	current_ptr = start;
-	a = 0;
+	next_result_index = 0;
 	while (1)
 	{
 		if (*current_ptr == c || *current_ptr == 0)
 		{
 			len_substr = current_ptr - start;
 			substring = (char *)malloc((len_substr + 1) * sizeof(char));
+			if (substring == NULL)
+			{
+				while (next_result_index > 0)
+				{
+					free(results[next_result_index]);
+					next_result_index--;
+				}
+				free(results);
+				return (NULL);
+			}
 			substring[len_substr] = '\0';
-			array_of_substr[a] = ft_memcpy(substring, start, len_substr);
-			a++;
+			results[next_result_index] = ft_memcpy(substring, start, len_substr);
+			next_result_index++;
 			if (*current_ptr == 0)
 			{
-				array_of_substr[a] = 0;
-				break;
+				results[next_result_index] = 0;
+				return (results);
 			}
 			else
 			{
@@ -72,7 +82,6 @@ char	**ft_split(char const *s, char c)
 		}
 		current_ptr++;
 	}
-	return (array_of_substr);
 }
 
 
