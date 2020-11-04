@@ -75,6 +75,18 @@ void	test_ft_strtrim5(void)
 	assert(ft_strncmp(new_str, "st?ri00000n!g", 15) == 0);
 }
 
+void	test_ft_strtrim6(void)
+{
+	char s1[] = "* !&?";
+	char set[] = " | *&	0?! ";
+	
+	char *new_str;
+	new_str = ft_strtrim(s1, set);
+
+//	printf("string:%s\nset:%s\nafter f:%s\n", s1, set, new_str);
+//	assert(ft_strtrim(s1, set) == NULL);
+}
+
 void	test_ft_strtrim(void)
 {
 	test_ft_strtrim1();
@@ -82,6 +94,7 @@ void	test_ft_strtrim(void)
 	test_ft_strtrim3();
 	test_ft_strtrim4();
 	test_ft_strtrim5();
+	test_ft_strtrim6();
 }
 
 
