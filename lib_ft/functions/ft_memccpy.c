@@ -12,12 +12,13 @@
 
 #include "libft.h"
 
-void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n)
+void	*ft_memccpy(void *restrict dst,
+					const void *restrict src, int c, size_t n)
 {
 	unsigned	int		i;
 	unsigned	char	*destination;
 	unsigned	char	*sorce;
-	
+
 	i = 0;
 	destination = (unsigned char *)dst;
 	sorce = (unsigned char *)src;

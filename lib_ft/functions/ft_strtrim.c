@@ -17,7 +17,7 @@ int		ft_start_search(char const *s1, char const *set)
 {
 	int i;
 	int start;
-	
+
 	i = 0;
 	start = 0;
 	while (s1[i] != '\0')
@@ -37,7 +37,7 @@ int		ft_end_search(char const *s1, char const *set)
 	int i;
 	int end;
 	int len_s1;
-	
+
 	i = 0;
 	end = 0;
 	len_s1 = ft_strlen(s1);
@@ -60,7 +60,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char			*s2;
 	int				start;
 	int				end;
-	
+
 	start = ft_start_search(s1, set);
 	end = ft_end_search(s1, set);
 	len_s2 = end - start;

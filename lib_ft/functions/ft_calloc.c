@@ -19,7 +19,7 @@ void	*ft_calloc(size_t count, size_t size)
 	int					i;
 	unsigned	char	*temp;
 	unsigned	long	number_of_memory;
-	
+
 	number_of_memory = (count) * (size);
 	result = malloc(number_of_memory);
 	if (result == NULL)

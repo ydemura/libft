@@ -11,15 +11,13 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h> //for printf
-#include <stdlib.h> //for malloc
-
+#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char				*sub_str;
 	unsigned	int		i;
-	
+
 	i = 0;
 	sub_str = malloc((len + 1) * sizeof(char));
 	if (sub_str == NULL)

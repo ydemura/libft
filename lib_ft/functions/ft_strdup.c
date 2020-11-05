@@ -11,13 +11,14 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h> //for malloc
+#include <stdlib.h>
+
 char	*ft_strdup(const char *s1)
 {
-	int len;
-	int i;
-	char *s2;
-	
+	int		len;
+	int		i;
+	char	*s2;
+
 	i = 0;
 	len = 0;
 	while (s1[len] != '\0')
