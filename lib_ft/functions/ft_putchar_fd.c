@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strmapi.c                                       :+:    :+:            */
+/*   ft_putchar_fd.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
@@ -11,22 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
+#include <unistd.h>
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_putchar_fd(char c, int fd)
 {
-	int		i;
-	int		len;
-	char	*new_s;
-	
-	len = ft_strlen(s);
-	new_s = (char *)malloc((len + 1) * sizeof(char));
-	i = 0;
-	while (s[i] != 0)
-	{
-		new_s[i] = f(i, s[i]);
-		i++;
-	}
-	new_s[i] = 0;
-	return (new_s);
+	write(fd, &c, 1);
 }

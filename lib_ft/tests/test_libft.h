@@ -39,3 +39,4 @@ void	test_ft_strtrim(void);
 void	test_ft_split(void);
 void	test_ft_itoa(void);
 void	test_ft_strmapi(void);
+void	test_ft_putchar_fd(void);

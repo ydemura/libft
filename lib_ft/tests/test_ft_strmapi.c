@@ -14,7 +14,7 @@
 
 #include "test_libft.h"
 
-char	test_give_five(unsigned int i, char c)
+char	give_five(unsigned int i, char c)
 {
 	if (i == 0)
 	{
@@ -27,7 +27,7 @@ char	test_give_five(unsigned int i, char c)
 	return (c);
 }
 
-char	test_capitalise_odd(unsigned int i, char c)
+char	capitalise_odd(unsigned int i, char c)
 {
 	if (i % 2 == 0)
 	{
@@ -42,7 +42,7 @@ void	test_ft_strmapi1(void)
 	char const *s;
 	
 	s = "testthisstring";
-	result = ft_strmapi(s, *test_give_five);
+	result = ft_strmapi(s, *give_five);
 	//printf("%s\n", result);
 	assert(ft_strncmp(result, "0estt5isstring", 20) == 0);
 }
@@ -53,7 +53,7 @@ void	test_ft_strmapi2(void)
 	char const *s;
 	
 	s = "testthisstring";
-	result = ft_strmapi(s, *test_capitalise_odd);
+	result = ft_strmapi(s, *capitalise_odd);
 	//printf("%s\n", result);
 	assert(ft_strncmp(result, "TeStThIsStRiNg", 20) == 0);
 }
@@ -64,7 +64,7 @@ void	test_ft_strmapi3(void)
 	char const *s;
 	
 	s = "";
-	result = ft_strmapi(s, *test_give_five);
+	result = ft_strmapi(s, *give_five);
 	//printf("%s\n", result);
 	assert(ft_strncmp(result, "", 20) == 0);
 }
