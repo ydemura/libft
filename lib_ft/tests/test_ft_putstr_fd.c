@@ -1,15 +1,15 @@
 //
-//  test_ft_putchar_fd.c
+//  test_ft_putstr_fd.c
 //  lib_ft
 //
 //  Created by Yuliia Demura on 11/5/20.
 //
-//Parameters 	#1. The character to output.
+//Parameters 	#1. The string to output.
 //				#2. The file descriptor on which to write.
 //Return value None
-//External functs. write
-//Description Outputs the character ’c’ to the given file descriptor.
 
+//External functs. write
+//Description Outputs the string ’s’ to the given file descriptor.
 
 //				ssize_t write(int fildes, const void *buf, size_t nbytes);
 
@@ -30,33 +30,28 @@
 #include<sys/stat.h>
 #include <fcntl.h>
 
-void	test_ft_putchar_fd(void)
+void	test_ft_putstr_fd(void)
 {
-//	int fd = open("test_file.txt", O_RDWR | O_CREAT); //it is creating the file but I cannot open it
-//	if (fd == -1)
-//	{
-//		printf("%s\n", "ooops it is not opened");
-//	}
-//	if (fd > 0)
-//	{
-//		printf("%s\n", "opened");
-//	}
-//	char c;
-//	c = 'a';
-//	ft_putchar_fd(c, fd);
-//	ft_putchar_fd('c', fd);
-//	ft_putchar_fd('1', fd);
-//	ft_putchar_fd('2', fd);
-//	ft_putchar_fd('7', fd);
+//	char s[20] = "testmeyuliia";
 //
-//	int close(int fd);
-//	if (fd == -1)
+//	int fd1 = open("test_ft_putstr_fd.txt", O_RDWR | O_CREAT);
+//	if (fd1 == -1)
 //	{
-//		printf("%s\n", "ooops it is not CLOSED");
+//		printf("%s\n", "not opened :((");
 //	}
-//	if (fd > 0)
+//	if (fd1 > 0)
 //	{
-//		printf("%s\n", "closed");
+//		printf("%s\n", "opened ^__^");
+//	}
+//	ft_putstr_fd(s, fd1);
+//	int	close(int fd1);
+//	if (fd1 >= 0)
+//	{
+//		printf("\n%s\n", "closed ^__^");
+//	}
+//	if (fd1 < 0)
+//	{
+//		printf("\n%s\n", "not closed :(!");
 //	}
 	
 }

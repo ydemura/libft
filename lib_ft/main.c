@@ -39,6 +39,7 @@ int main()
 	test_ft_itoa();
 	test_ft_strmapi();
 	test_ft_putchar_fd();
+	test_ft_putstr_fd();
 	
 	
 	
