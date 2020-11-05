@@ -74,7 +74,7 @@ void	test_ft_memmove6(void)
 	char *src = &string[0];
 	char *dest = &string[5];
 	char *after = ft_memmove(dest, src, 7);
-	
+	//printf("%s\n", after);
 	assert(ft_strncmp(after, "1234567aaaaaa", 7) == 0);
 	
 }

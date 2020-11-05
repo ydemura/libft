@@ -5,6 +5,9 @@
 //  Created by Julia on 27.10.2020.
 //
 
+//The atoi() function converts the initial portion of the string pointed to
+//by str to int representation.
+
 #include "test_libft.h"
 
 void	test_ft_atoi(void)

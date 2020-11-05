@@ -12,7 +12,6 @@
 
 #include "libft.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 int		ft_delimetr_count(char const *s, char c)
 {
