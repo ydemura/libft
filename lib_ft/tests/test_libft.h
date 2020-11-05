@@ -41,3 +41,4 @@ void	test_ft_itoa(void);
 void	test_ft_strmapi(void);
 void	test_ft_putchar_fd(void);
 void	test_ft_putstr_fd(void);
+void	test_ft_putendl_fd(void);
