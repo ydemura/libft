@@ -37,6 +37,7 @@ int main()
 	test_ft_strtrim();
 	test_ft_split();
 	test_ft_itoa();
+	test_ft_strmapi();
 	
 	
 	

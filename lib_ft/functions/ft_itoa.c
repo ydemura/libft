@@ -12,7 +12,6 @@
 
 #include "libft.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 int		len_counter(int n)
 {
