@@ -1,76 +1,9 @@
 ft_memset:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_bzero:      [OK] [OK] [OK] [OK] 
-ft_memcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] 
-[crash]: your memcpy does not behave well with NULL as both params with size
-Test code:
-	ft_memcpy(((void *)0), ((void *)0), 3);
-
-
-ft_memccpy:    [OK] [FAILED] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-[fail]: your memccpy doesn't cast the memory into unsigned char
-Test code:
-	char buff1[] = "abcdefghijklmnopqrstuvwxyz";
-	char buff2[] = "abcdefghijklmnopqrstuvwxyz";
-	char *src = "string with\200inside !";
-
-	__builtin___memccpy_chk (buff1, src, '\200', 21, __builtin_object_size (buff1, 0));
-	ft_memccpy(buff2, src, '\200', 21);
-	if (!memcmp(buff1, buff2, 21))
-		exit(TEST_SUCCESS);
-	exit(TEST_FAILED);
-
-Diffs:
-     memccpy: |string with€mnopqrstuvwxyz|
-  ft_memccpy: |string with€inside !|
-
-[fail]: your memccpy doesn't cast the stop-character into unsigned char
-Test code:
-	char buff1[] = "abcdefghijklmnopqrstuvwxyz";
-	char buff2[] = "abcdefghijklmnopqrstuvwxyz";
-	char *src = "string with\200inside !";
-
-	__builtin___memccpy_chk (buff1, src, 0600, 21, __builtin_object_size (buff1, 0));
-	ft_memccpy(buff2, src, 0600, 21);
-	if (!memcmp(buff1, buff2, 21))
-		exit(TEST_SUCCESS);
-	exit(TEST_FAILED);
-
-Diffs:
-     memccpy: |string with€mnopqrstuvwxyz|
-  ft_memccpy: |string with€inside !|
-
-ft_memmove:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] [OK] 
-[crash]: your memmove does not well with NULL as both parameters and size
-Test code:
-	ft_memmove(((void *)0), ((void *)0), 5);
-
-
-ft_memchr:     [OK] [FAILED] [OK] [OK] [OK] [OK] [FAILED] [OK] 
-[fail]: your memchr does not cast in unsigned the memory
-Test code:
-	char *src = "/|\x12\xff\x09\x42\2002\42|\\";
-	int size = 10;
-
-	if (memchr(src, '\200', size) == ft_memchr(src, '\200', size))
-		exit(TEST_SUCCESS);
-	exit(TEST_FAILED);
-
-Diffs:
-      memchr: |€2"|\|
-   ft_memchr: |(null)|
-
-[fail]: your memchr failed to find a \0
-Test code:
-	char *src = "/|\x12\xff\x09\0\x42\042\0\42|\\";
-	int size = 12;
-
-	if (memchr(src, '\0', size) == ft_memchr(src, '\0', size))
-		exit(TEST_SUCCESS);
-	exit(TEST_FAILED);
-
-Diffs:
-
-
+ft_memcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memccpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memmove:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_memcmp:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strlen:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_isalpha:    [OK] 
@@ -81,20 +14,20 @@ ft_isprint:    [OK]
 ft_toupper:    [OK] 
 ft_tolower:    [OK] 
 ft_strchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_strrchr:    [OK] [FAILED] [OK] [OK] [OK] [OK] [CRASH] [OK] 
-[fail]: your strrchr does not work with basic input
+ft_strrchr:    [OK] [OK] [OK] [OK] [FAILED] [OK] [CRASH] [OK] 
+[fail]: your strrchr does not work with \0
 Test code:
-	char *src = "abbbbbbbb";
-	char *d1 = strrchr(src, 'a');
-	char *d2 = ft_strrchr(src, 'a');
+	char *src = "there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0";
+	char *d1 = strrchr(src, '\0');
+	char *d2 = ft_strrchr(src, '\0');
 
 	if (d1 == d2)
 		exit(TEST_SUCCESS);
 	exit(TEST_FAILED);
 
 Diffs:
-     strrchr: |abbbbbbbb|
-  ft_strrchr: |(null)|
+     strrchr: ||
+  ft_strrchr: ||
 
 [crash]: your strrchr crash because it read too many bytes or attempt to write on s !
 Test code:
@@ -456,8 +389,8 @@ Test code:
 	exit(TEST_SUCCESS);
 
 Diffs:
-       split: |split  |
-    ft_split: |split  P|
+       split: |this|
+    ft_split: ||
 
 [fail]: your split does not work with basic input
 Test code:
@@ -479,28 +412,7 @@ Diffs:
        split: |split|
     ft_split: |A|
 
-ft_itoa:       [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [KO] [OK] 
-[fail]: your itoa does not work with random number
-Test code:
-	srand(clock());
-	int n;
-	char *d;
-
-	for (int i = 0; i < 2000; i++)
-	{
-		n = rand();
-		d = ft_itoa(n);
-		if (atoi(d) != n)
-		{
-			exit(TEST_FAILED);
-		}
-	}
-	exit(TEST_SUCCESS);
-
-Diffs:
-        itoa: |4705960|
-     ft_itoa: |0|
-
+ft_itoa:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [OK] 
 [KO]: your itoa does not allocate the good size so the \0 test may be false
 Test code:
 	int size;
@@ -639,7 +551,7 @@ Test code:
 	exit(TEST_SUCCESS);
 
 Diffs:
-   putnbr_fd: |4806802|
+   putnbr_fd: |4739574|
 ft_putnbr_fd: |0|
 
 [fail]: your putnbr_fd allocate memory, wtf ???

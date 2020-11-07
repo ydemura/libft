@@ -20,7 +20,7 @@
 
 #include "test_libft.h"
 
-void	test_ft_substr(void)
+void	test_ft_substr1(void)
 {
 	char s[] = "1234test9";
 	char *sub_str;
@@ -30,4 +30,20 @@ void	test_ft_substr(void)
 
 	assert(ft_strncmp(sub_str, "test", 10) == 0);
 	
+}
+
+void	test_ft_substr2(void)
+{
+	//[fail]: your substr does not work when start >= ft_strlen(s)
+		char str[] = "01234";
+		size_t size = 10;
+		char *ret = ft_substr(str, 10, size);
+
+	printf();
+}
+
+void	test_ft_substr(void)
+{
+	//test_ft_substr1();
+	test_ft_substr2();
 }

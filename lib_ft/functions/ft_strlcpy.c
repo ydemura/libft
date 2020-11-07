@@ -12,6 +12,23 @@
 
 #include "libft.h"
 
+//void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+//{
+//	unsigned	int		i;
+//	unsigned	char	*destination;
+//	unsigned	char	*sorce;
+//
+//	destination = (unsigned char *)dst;
+//	sorce = (unsigned char *)src;
+//	i = 0;
+//	while (i < n && (dst != (void *)0 || src != (void *)0))
+//	{
+//		destination[i] = sorce[i];
+//		i++;
+//	}
+//	return (dst);
+//}
+
 size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 {
 	unsigned int src_len;

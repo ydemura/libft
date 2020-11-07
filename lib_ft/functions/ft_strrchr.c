@@ -23,13 +23,13 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		len++;
 	}
-	if (s[len + 1] == '\0' && c == '\0')
+	if (s[len] == '\0' && c == '\0')
 	{
 		return (&str[len]);
 	}
-	while (len > 0)
+	while (len >= 0)
 	{
-		if (s[len] == c)
+		if (s[len] == (unsigned char)c)
 		{
 			return (&str[len]);
 		}

@@ -79,6 +79,17 @@ void	test_ft_memmove6(void)
 	
 }
 
+void	test_ft_memmove7(void)
+{
+	//char string[] = "1234567890aaaaaaaa";
+	//char *src = &string[0];
+	//char *dest = &string[5];
+	char *after = ft_memmove(((void *)0), ((void *)0), 5);
+	//printf("%s\n", after);
+	assert(after == memmove(((void *)0), ((void *)0), 5));
+	
+}
+
 void	test_ft_memmove(void)
 {
 	test_ft_memmove1();
@@ -87,4 +98,5 @@ void	test_ft_memmove(void)
 	test_ft_memmove4();
 	test_ft_memmove5();
 	test_ft_memmove6();
+	test_ft_memmove7();
 }

@@ -16,6 +16,7 @@
 //	If the return value is >= dstsize, the output string has been truncated.  It is the caller's responsibility to handle this.
 
 #include "test_libft.h"
+#include <stdio.h>
 
 void	test_ft_strlcpy1(void)
 {
@@ -78,6 +79,18 @@ void	test_ft_strlcpy6(void)
 	assert(ft_strncmp(dst, "chec", 10) == 0);
 }
 
+void	test_ft_strlcpy7(void)
+{
+	char str[] = "the cake is a lie !\0I'm hidden lol\r\n";
+	char buff1[0xF00];
+	char buff2[0xF00];
+	int dstsize = 4;
+	
+	ft_strlcpy(buff1, str, dstsize);
+	//printf("%zu\n%lu\n", ft_strlcpy(buff2, str, dstsize), strlcpy(buff1, str, dstsize));
+	//printf("%s\n%s\n", buff1, buff2);
+	//assert(ft_strncmp(buff1, "||", 10) == 0);
+}
 
 void	test_ft_strlcpy(void)
 {
@@ -87,4 +100,5 @@ void	test_ft_strlcpy(void)
 	test_ft_strlcpy4();
 	test_ft_strlcpy5();
 	test_ft_strlcpy6();
+	test_ft_strlcpy7();
 }

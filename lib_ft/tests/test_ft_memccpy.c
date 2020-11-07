@@ -16,6 +16,7 @@
 //The source and destination strings should not overlap, as the behavior is undefined.
 
 #include "test_libft.h"
+#include <stdio.h>
 
 void	test_ft_memccpy1(void)
 {
@@ -41,8 +42,25 @@ void	test_ft_memccpy2(void)
 	assert(ft_strncmp(result, "456789", ft_strlen(result)) == 0);
 }
 
+void	test_ft_memccpy3(void)
+{
+	char buff1[] = "abcdefghijklmnopqrstuvwxyz";
+	char buff2[] = "abcdefghijklmnopqrstuvwxyz";
+	char src[] = "string with\200inside !";
+	char c = '\200';
+	char *result;
+	char *result1;
+	result = memccpy(buff1, src, c, 26);
+	result1 = ft_memccpy(buff2, src, c, 26);
+	
+//	printf("%s\n", result);
+//	printf("%s\n", result1);
+	assert(ft_memcmp(buff1, buff2, 21) == 0);
+}
+
 void	test_ft_memccpy(void)
 {
 	test_ft_memccpy1();
 	test_ft_memccpy2();
+	test_ft_memccpy3();
 }

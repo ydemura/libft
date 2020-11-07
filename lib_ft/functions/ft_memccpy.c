@@ -25,7 +25,7 @@ void	*ft_memccpy(void *restrict dst,
 	while (i < n)
 	{
 		destination[i] = sorce[i];
-		if (c == sorce[i])
+		if ((unsigned char)c == sorce[i])
 		{
 			return (&dst[i + 1]);
 		}
