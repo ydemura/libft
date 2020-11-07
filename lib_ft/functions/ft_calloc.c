@@ -16,7 +16,7 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void				*result;
-	int					i;
+	unsigned	int		i;
 	unsigned	char	*temp;
 	unsigned	long	number_of_memory;
 
