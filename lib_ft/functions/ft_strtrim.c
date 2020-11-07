@@ -13,7 +13,7 @@
 #include "libft.h"
 #include <stdlib.h>
 
-int		ft_start_search(char const *s1, char const *set)
+static	int		ft_start_search(char const *s1, char const *set)
 {
 	int i;
 	int start;
@@ -32,7 +32,7 @@ int		ft_start_search(char const *s1, char const *set)
 	return (0);
 }
 
-int		ft_end_search(char const *s1, char const *set)
+static	int		ft_end_search(char const *s1, char const *set)
 {
 	int i;
 	int end;

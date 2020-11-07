@@ -13,7 +13,7 @@
 #include "libft.h"
 #include <stdlib.h>
 
-int		ft_delimetr_count(char const *s, char c)
+static	int		ft_delimetr_count(char const *s, char c)
 {
 	int		result;
 
@@ -29,7 +29,7 @@ int		ft_delimetr_count(char const *s, char c)
 	return (result);
 }
 
-int		ft_subsstr_until_char(char **substring, const char **start, char c)
+static	int		ft_subsstr_until_char(char **substring, const char **start, char c)
 {
 	const char	*end;
 

@@ -13,7 +13,7 @@
 #include "libft.h"
 #include <stdlib.h>
 
-int		len_counter(int n)
+static	int		len_counter(int n)
 {
 	int n_check;
 	int len;
@@ -33,7 +33,7 @@ int		len_counter(int n)
 	return (len);
 }
 
-char	*ft_putnmbr(char *s, int n, int i)
+static	char	*ft_putnmbr(char *s, int n, int i)
 {
 	if (n < 0)
 	{
@@ -49,7 +49,7 @@ char	*ft_putnmbr(char *s, int n, int i)
 	return (s);
 }
 
-char	*ft_strrev(char *s)
+static	char	*ft_strrev(char *s)
 {
 	int		len;
 	char	temp;
