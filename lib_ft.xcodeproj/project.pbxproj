@@ -114,6 +114,7 @@
 		0D381B1C25544B630038C1D8 /* test_ft_strmapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_strmapi.c; sourceTree = "<group>"; };
 		0D58239E25546EDA0003EFDB /* ft_putchar_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_putchar_fd.c; sourceTree = "<group>"; };
 		0D5823A025546EEB0003EFDB /* test_ft_putchar_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_putchar_fd.c; sourceTree = "<group>"; };
+		0D71405E255700DB0077B890 /* result.log */ = {isa = PBXFileReference; lastKnownFileType = file; name = result.log; path = lib_ft/result.log; sourceTree = SOURCE_ROOT; };
 		0D715E7F25548EE000A15141 /* ft_putstr_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_putstr_fd.c; sourceTree = "<group>"; };
 		0D715E8125548F3200A15141 /* test_ft_putstr_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_putstr_fd.c; sourceTree = "<group>"; };
 		0D715E832554953E00A15141 /* ft_putendl_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_putendl_fd.c; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 		A3A66A3B25481DBB00423CEB /* functions */ = {
 			isa = PBXGroup;
 			children = (
+				0D71405E255700DB0077B890 /* result.log */,
 				A3A66A3F25481E1000423CEB /* libft.h */,
 				A3A66AB2254C1F2200423CEB /* ft_atoi.c */,
 				A3A66AA6254C1F2200423CEB /* ft_bzero.c */,

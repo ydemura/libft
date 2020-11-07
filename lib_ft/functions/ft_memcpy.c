@@ -21,7 +21,7 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 	destination = (unsigned char *)dst;
 	sorce = (unsigned char *)src;
 	i = 0;
-	while (i < n)
+	while (i < n && (dst != (void *)0 || src != (void *)0))
 	{
 		destination[i] = sorce[i];
 		i++;
