@@ -39,7 +39,6 @@ void	test_ft_substr2(void)
 		size_t size = 10;
 		char *ret = ft_substr(str, 10, size);
 
-	printf();
 }
 
 void	test_ft_substr(void)
