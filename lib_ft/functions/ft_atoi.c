@@ -63,8 +63,6 @@ int		ft_atoi(const char *str)
 	return (res * n);
 }
 
-
-
 //int		ft_atoi(const char *str)
 //{
 //	int i;
