@@ -20,52 +20,92 @@
 
 void	test_ft_strlcat1(void)
 {
-	char dst[50] = "destination"; //11
-	char src[] = "copyit"; //6
+	char dst[50] = "destination/"; //12
+	char dst1[50] = "destination/"; //12
+	char src[] = "aaaaaa"; //6
 	int destsize = 19;
 	
-	assert(ft_strlcat(dst, src, destsize) == 17);
-	assert(ft_strncmp(dst, "destinationcopyit", 20) == 0);
+	ft_strlcat(dst, src, destsize);
+	strlcat(dst1, src, destsize);
+	//printf("my: %s\nor: %s\n", dst, dst1);
+	//assert(ft_strlcat(dst, src, destsize) == 18);
+	//printf("my: %s\nor: %s\n", dst, dst1);
+	assert(ft_memcmp(dst, "destination/aaaaaa", 20) == ft_memcmp(dst1, "destination/aaaaaa", 20));
 }
 
 void	test_ft_strlcat2(void)
 {
-	char dst[50] = ""; //11
-	char src[] = "copyit"; //6
-	int destsize = 12;
+	char dst[50] = "destination/"; //12
+	char dst1[50] = "destination/"; //12
+	char src[] = "aaaaaa"; //6
+	int destsize = 3;
 	
-	assert(ft_strlcat(dst, src, destsize) == 6);
-	assert(ft_strncmp(dst, "copyit", 20) == 0);
+	ft_strlcat(dst, src, destsize);
+	strlcat(dst1, src, destsize);
+	//printf("my: %s\nor: %s\n", dst, dst1);
+	//assert(ft_strlcat(dst, src, destsize) == 18);
+	//printf("my: %s\nor: %s\n", dst, dst1);
+	assert(ft_memcmp(dst, "destination/aaaaaa", 20) == ft_memcmp(dst1, "destination/aaaaaa", 20));
 }
 
 void	test_ft_strlcat3(void)
 {
-	char dst[50] = "destination"; //11
-	char src[] = ""; //6
-	int destsize = 12;
+	char dst[50] = "destination/"; //12
+	char dst1[50] = "destination/"; //12
+	char src[] = "aaaaaa"; //6
+	int destsize = 0;
 	
-	assert(ft_strlcat(dst, src, destsize) == 11);
-	assert(ft_strncmp(dst, "destination", 20) == 0);
+	ft_strlcat(dst, src, destsize);
+	strlcat(dst1, src, destsize);
+	//printf("my: %s\nor: %s\n", dst, dst1);
+	//assert(ft_strlcat(dst, src, destsize) == 18);
+	//printf("my: %s\nor: %s\n", dst, dst1);
+	assert(ft_memcmp(dst, "destination/aaaaaa", 20) == ft_memcmp(dst1, "destination/aaaaaa", 20));
 }
 
 void	test_ft_strlcat4(void)
 {
-	char dst[50] = "destination"; //11
-	char src[] = "copyit"; //6
-	int destsize = 0;
+	char dst[50] = ""; //12
+	char dst1[50] = ""; //12
+	char src[] = "aaaaaa"; //6
+	int destsize = 4;
 	
-	assert(ft_strlcat(dst, src, destsize) == 6); // !! WRONG original 17, my 6
-	assert(ft_strncmp(dst, "destination", 20) == 0); // correct though
+	ft_strlcat(dst, src, destsize);
+	strlcat(dst1, src, destsize);
+	//printf("my: %s\nor: %s\n", dst, dst1);
+	//assert(ft_strlcat(dst, src, destsize) == 18);
+	//printf("my: %s\nor: %s\n", dst, dst1);
+	assert(ft_memcmp(dst, "destination/aaaaaa", 20) == ft_memcmp(dst1, "destination/aaaaaa", 20));
 }
 
 void	test_ft_strlcat5(void)
 {
-	char dst[50] = "aaaaa"; // 5
-	char src[] = "123456789"; // 9
-	int destsize = 3;
-	
-	assert(strlcat(dst, src, destsize) == 12);
-	assert(ft_strncmp(dst, "aaaaa", 20) == 0);
+//		char *str = "the cake is a lie !\0I'm hidden lol\r\n"; //"the cake is a lie !I'm hidden lol"
+//		char buff1[0xF00] = "there is no stars in the sky";
+//		char buff2[0xF00] = "there is no stars in the sky";
+//		size_t max = strlen("the cake is a lie !\0I'm hidden lol\r\n") + 4;
+//		size_t r1 = __builtin___strlcat_chk (buff1, str, max, __builtin_object_size (buff1, 2 > 1 ? 1 : 0));
+//		size_t r2 = ft_strlcat(buff2, str, max);
+//		size_t max = strlen("the cake is a lie !\0I'm hidden lol\r\n") + 4;
+		//printf("%zu\n", max);
+//		size_t r1 = ft_strlcat(buff1, str, 23);
+//		size_t r2 = strlcat(buff2, str, 23);
+		//printf("%zu\n%zu\n", r1, r2);
+		//if (r1 != r2)
+			
+			//printf("%s\n", "failed1");
+//		char s1[4] = "";
+//		char s2[4] = "";
+//		r1 = __builtin___strlcat_chk (s1, "thx to ntoniolo for this test !", 4, __builtin_object_size (s1, 2 > 1 ? 1 : 0))
+//			;
+//		r2 = ft_strlcat(s2, "thx to ntoniolo for this test !", 4)
+//			;
+//		if (r1 != r2)
+//			printf("%s\n", "failed2");
+
+//	Diffs:
+//		 strlcat: |42|
+//	  ft_strlcat: |47|
 }
 
 
