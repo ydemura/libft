@@ -131,7 +131,7 @@ void	test_ft_split5(void)
 	int n = 0;
 	while (result[n] != 0)
 	{
-		printf("%s\n", result[n]);
+		printf("%s\n", result[n]);//Thread 1: EXC_BAD_ACCESS (code=EXC_I386_GPFLT)
 		n++;
 	}
 

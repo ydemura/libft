@@ -14,8 +14,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-//ft_split:      [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [💥 ]
-//[fail]: 2 your split does not work with one word
+//ft_split:      [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] [💥 ]
+//[crash]: 3 your split does not work with basic input
 static	int		ft_delimetr_count(char const *s, char c)
 {
 	int		result;
@@ -23,11 +23,6 @@ static	int		ft_delimetr_count(char const *s, char c)
 
 	result = 0;
 	i = 0;
-//	if (s[i] != c && s[i] != '\0')
-//	{
-//		result++;
-//		i++;
-//	}
 	while (s[i] != 0)
 	{
 		if (s[i] == c && s[i + 1] != c && s[i + 1] != '\0')
@@ -36,7 +31,6 @@ static	int		ft_delimetr_count(char const *s, char c)
 		}
 		i++;
 	}
-	printf("number_of_substr: %i\n", result + 1);
 	return (result);
 }
 
@@ -65,9 +59,6 @@ static int ft_subsstr_until_char(char **substring, const char **start, char c)
 	ft_memcpy(*substring, *start, end - *start);
 	(*substring)[end - *start] = '\0';
 	
-	int len = ft_strlen(*substring);
-	printf("%i\n", len);
-	
 	*start = end + 1;
 	return (1);
 }
@@ -86,7 +77,6 @@ char	**ft_split(char const *s, char c)
 	while (i_substrings < n_substrings)
 		if (ft_subsstr_until_char(&results[i_substrings], &s, c) == 1)
 		{
-			printf("%s\n", results[i_substrings]);
 			i_substrings++;
 		}
 		else
@@ -100,7 +90,6 @@ char	**ft_split(char const *s, char c)
 			return (NULL);
 		}
 	results[n_substrings] = NULL;
-	printf("\n\n");
 	return (results);
 }
 
