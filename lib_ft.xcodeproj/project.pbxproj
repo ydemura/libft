@@ -120,7 +120,6 @@
 		0D715E852554954D00A15141 /* test_ft_putendl_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_putendl_fd.c; sourceTree = "<group>"; };
 		0D715E882554989B00A15141 /* ft_putnbr_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_putnbr_fd.c; sourceTree = "<group>"; };
 		0D715E8A255498A900A15141 /* test_ft_putnbr_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_putnbr_fd.c; sourceTree = "<group>"; };
-		0DF1EC2D2557F0AF001CB5C7 /* result.log */ = {isa = PBXFileReference; lastKnownFileType = text; name = result.log; path = "../../../Tests_2try/libft-unit-test/result.log"; sourceTree = "<group>"; };
 		A3A66A3025481CA400423CEB /* lib_ft */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lib_ft; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A66A3325481CA400423CEB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A3A66A3F25481E1000423CEB /* libft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libft.h; sourceTree = "<group>"; };
@@ -206,7 +205,6 @@
 		A3A66A3B25481DBB00423CEB /* functions */ = {
 			isa = PBXGroup;
 			children = (
-				0DF1EC2D2557F0AF001CB5C7 /* result.log */,
 				A3A66A3F25481E1000423CEB /* libft.h */,
 				A3A66AB2254C1F2200423CEB /* ft_atoi.c */,
 				A3A66AA6254C1F2200423CEB /* ft_bzero.c */,
