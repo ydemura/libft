@@ -354,7 +354,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "norminette \"$SRCROOT/lib_ft/functions/\"\n";
+			shellScript = "#norminette \"$SRCROOT/lib_ft/functions/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

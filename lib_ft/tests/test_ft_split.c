@@ -69,31 +69,87 @@ void	test_ft_split2(void)
 
 void	test_ft_split3(void)
 {
-	char s2[] = "      split       this for   me  !     "; // the last + first delimeter is an issue + more then 1 delimeter is an issue
+	char s2[] = "      split       this for   me  !       "; // the last + first delimeter is an issue + more then 1 delimeter is an issue
 	char c2 = ' ';
 	char **result;
 
 	result = ft_split(s2, c2);
 	int n = 0;
-	while (*result[n] != 0)
+	while (result[n] != 0)
 	{
-		printf("%s", result[n]);
+		printf("%s\n", result[n]);
 		n++;
 	}
 
-	assert(ft_strncmp(result[0], "split", 3) == 0);
+	assert(ft_strncmp(result[0], "split", 5) == 0);
 	assert(ft_strncmp(result[1], "this", 4) == 0);
-	assert(ft_strncmp(result[2], "for", 5) == 0);
-	assert(ft_strncmp(result[3], "me", 6) == 0);
-	assert(ft_strncmp(result[4], "!", 6) == 0);
+	assert(ft_strncmp(result[2], "for", 3) == 0);
+	assert(ft_strncmp(result[3], "me", 2) == 0);
+	assert(ft_strncmp(result[4], "!", 1) == 0);
 	// assert(ft_strncmp(result[5], (null), 6) == 0);
+}
+
+void	test_ft_split4(void)
+{
+//	char *s = "olol                     ";
+//	char **result = ft_split(s, ' ');
+//
+//	split_cmp_array(expected, result);
+//
+//Diffs:
+//	   split: |olol|
+//	ft_split: |(null)|
+	
+	char s2[] = "....split..it.for...me...!..."; // the last + first delimeter is an issue + more then 1 delimeter is an issue
+	char c2 = '.';
+	char **result;
+
+	result = ft_split(s2, c2);
+//	int n = 0;
+//	while (result[n] != 0)
+//	{
+//		printf("%s\n", result[n]);
+//		n++;
+//	}
+
+	assert(ft_strncmp(result[0], "split", 5) == 0);
+	assert(ft_strncmp(result[1], "it", 4) == 0);
+	assert(ft_strncmp(result[2], "for", 3) == 0);
+	assert(ft_strncmp(result[3], "me", 2) == 0);
+	assert(ft_strncmp(result[4], "!", 1) == 0);
+	//assert(ft_strncmp(result[5], (null), 6) == 0);
+}
+
+void	test_ft_split5(void)
+{
+	
+	char s2[] = "      split       this for   me  !       ";
+	char c2 = ' ';
+	char **result;
+
+	result = ft_split(s2, c2);
+	int n = 0;
+	while (result[n] != 0)
+	{
+		printf("%s\n", result[n]);
+		n++;
+	}
+
+//	assert(ft_strncmp(result[0], "split", 5) == 0);
+//	assert(ft_strncmp(result[1], "it", 4) == 0);
+//	assert(ft_strncmp(result[2], "for", 3) == 0);
+//	assert(ft_strncmp(result[3], "me", 2) == 0);
+//	assert(ft_strncmp(result[4], "!", 1) == 0);
+	//assert(ft_strncmp(result[5], (null), 6) == 0);
 }
 
 void	test_ft_split(void)
 {
-	test_ft_split1();
-	test_ft_split2();
-	test_ft_split3();
+//	test_ft_split1();
+//	test_ft_split2();
+//	test_ft_split3();
+//	test_ft_split4();
+	test_ft_split5();
 }
 
 
@@ -262,5 +318,80 @@ void	test_ft_split(void)
 //		}
 //	}
 //	results[n_substrings] = 0;
+//	return (results);
+//}
+
+//try2
+
+//static	int		ft_substr_count(char const *s, char c)
+//{
+//	char const *end;
+//	int		result;
+//
+//	result = 0;
+//	end = s;
+//	while (1)
+//		if (*end == c)
+//		{
+//			result += (end - s > 0);
+//			s = end + 1;
+//			end = s;
+//		}
+//		else if (*end == 0)
+//			return result + (end - s > 0);
+//		else
+//			end++;
+//}
+//
+//static int ft_subsstr_until_char(char **substring, const char **start, char c)
+//{
+//	const char	*end;
+//	size_t len;
+//
+//	end = *start;
+//	while (*end != '\0' && *end != c)
+//	{
+//		end++;
+//	}
+//	len = end - *start;
+//	*substring = malloc((len + 1) * sizeof(char));
+//	if (*substring == NULL)
+//	{
+//		return (0);
+//	}
+//	ft_memcpy(*substring, *start, len);
+//	substring[len] = 0;
+//	*start = end + 1;
+//	return (1);
+//}
+//
+//char	**ft_split(char const *s, char c)
+//{
+//	int		n_substrings;
+//	int		i_substrings;
+//	char	**results;
+//
+//	i_substrings = 0;
+//	n_substrings = ft_substr_count(s, c);
+//	results = (char **)malloc((n_substrings + 1) * sizeof(char *));
+//	if (results == NULL)
+//		return (NULL);
+//	while (i_substrings < n_substrings)
+//	{
+//		while (*s == c)
+//			s++;
+//		if (*s == 0)
+//			break;
+//		if (ft_subsstr_until_char(&results[i_substrings], &s, c) == 1)
+//			i_substrings++;
+//		else
+//		{
+//			while (i_substrings > 0)
+//				free(results[i_substrings--]);
+//			free(results);
+//			return (NULL);
+//		}
+//	}
+//	results[n_substrings] = NULL;
 //	return (results);
 //}
