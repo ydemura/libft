@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	{
 		return (NULL);
 	}
-	if(start >= (unsigned int)ft_strlen(s))
+	if (start >= (unsigned int)ft_strlen(s))
 	{
 		sub_str[i] = '\0';
 		return (sub_str);
