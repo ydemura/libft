@@ -12,7 +12,7 @@ HEADER_FILES = libft.h
 all: $(NAME)
 
 # $(NAME): $(OBJ_FILES)
-#     ${LIBC} $(NAME) $(OBJ_FILES) //for library
+#     ${LIBC} $(NAME) $(OBJ_FILES) ////for library
 
 $(NAME)
 	$(CC) $(FLAGS) -o $(NAME) $(OBJ_FILES)
