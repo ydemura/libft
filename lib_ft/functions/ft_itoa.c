@@ -72,7 +72,7 @@ static	char	*ft_strrev(char *s)
 	return (s);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char	*s;
 	int		len;

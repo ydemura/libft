@@ -13,20 +13,6 @@
 
 //Negative numbers must be handled.
 
-//[KO]: your itoa does not allocate the good size so the \0 test may be false
-//Test code:
-//	int size;
-//	char *i1;
-//
-//	i1 = ft_itoa(0);
-//	size = get_last_malloc_size();
-//	if (size == 2)
-//		exit(TEST_SUCCESS);
-//	exit(TEST_KO);
-//
-//Diffs:
-//		itoa: |2|
-//	 ft_itoa: |1|
 
 #include "test_libft.h"
 
@@ -87,29 +73,45 @@ void	test_ft_itoa5(void)
 	s = ft_itoa(n);
 	
 	//printf("%s\n", s);
-	assert(ft_strncmp(s, "0", 11) == 0);
+	assert(strcmp(s, "0") == 0);
 }
 
 void	test_ft_itoa6(void)
 {
-	int size;
-	char *i1;
+	//[KO]: your itoa does not allocate the good size so the \0 test may be false
+	//Test code:
+	//	int size;
+	//	char *i1;
+	//
+	//	i1 = ft_itoa(0);
+	//	size = get_last_malloc_size();
+	//	if (size == 2)
+	//		exit(TEST_SUCCESS);
+	//	exit(TEST_KO);
+	//
+	//Diffs:
+	//		itoa: |2|
+	//	 ft_itoa: |1|
 	
-	i1 = ft_itoa(0);
-	//size = get_last_malloc_size();
-//	if (size == 2)
-//		printf("TEST_SUCCESS");
-//	printf("TEST_KO");
+	int n;
+	char *s;
+	
+	n = -2147483648;
+	s = ft_itoa(n);
+	
+	//printf("%s\n", s);
+	assert(strcmp(s, "-2147483648") == 0);
+	
 }
 
 
 
 void	test_ft_itoa(void)
 {
-//	test_ft_itoa1();
-//	test_ft_itoa2();
-//	test_ft_itoa3();
-//	test_ft_itoa4();
-//	test_ft_itoa5();
+	test_ft_itoa1();
+	test_ft_itoa2();
+	test_ft_itoa3();
+	test_ft_itoa4();
+	test_ft_itoa5();
 	test_ft_itoa6();
 }
