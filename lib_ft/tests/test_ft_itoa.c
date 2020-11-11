@@ -25,7 +25,7 @@ void	test_ft_itoa1(void)
 	s = ft_itoa(n);
 	
 	//printf("%s\n", s);
-	assert(ft_strncmp(s, "-5778", 10) == 0);
+	assert(strcmp(s, "-5778") == 0);
 }
 
 void	test_ft_itoa2(void)
@@ -37,7 +37,7 @@ void	test_ft_itoa2(void)
 	s = ft_itoa(n);
 	
 	//printf("%s\n", s);
-	assert(ft_strncmp(s, "1234567", 9) == 0);
+	assert(strcmp(s, "1234567") == 0);
 }
 
 void	test_ft_itoa3(void)
@@ -49,7 +49,7 @@ void	test_ft_itoa3(void)
 	s = ft_itoa(n);
 	
 	//printf("%s\n", s);
-	assert(ft_strncmp(s, "2147483647", 11) == 0);
+	assert(strcmp(s, "2147483647") == 0);
 }
 
 void	test_ft_itoa4(void)
@@ -61,7 +61,7 @@ void	test_ft_itoa4(void)
 	s = ft_itoa(n);
 	
 	//printf("%s\n", s);
-	assert(ft_strncmp(s, "-2147483648", 11) == 0);
+	assert(strcmp(s, "-2147483648") == 0);
 }
 
 void	test_ft_itoa5(void)
@@ -69,11 +69,12 @@ void	test_ft_itoa5(void)
 	int n;
 	char *s;
 	
-	n = 0;
+	n = -2147483648;
 	s = ft_itoa(n);
 	
 	//printf("%s\n", s);
-	assert(strcmp(s, "0") == 0);
+	assert(strcmp(s, "-2147483648") == 0);
+
 }
 
 void	test_ft_itoa6(void)
@@ -96,11 +97,11 @@ void	test_ft_itoa6(void)
 	int n;
 	char *s;
 	
-	n = -2147483648;
+	n = 0;
 	s = ft_itoa(n);
 	
 	//printf("%s\n", s);
-	assert(strcmp(s, "-2147483648") == 0);
+	assert(strcmp(s, "0") == 0);
 	
 }
 

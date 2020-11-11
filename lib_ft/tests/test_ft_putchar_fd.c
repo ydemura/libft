@@ -32,31 +32,50 @@
 
 void	test_ft_putchar_fd(void)
 {
-//	int fd = open("test_file.txt", O_RDWR | O_CREAT); //it is creating the file but I cannot open it
-//	if (fd == -1)
-//	{
-//		printf("%s\n", "ooops it is not opened");
-//	}
-//	if (fd > 0)
-//	{
-//		printf("%s\n", "opened");
-//	}
-//	char c;
-//	c = 'a';
-//	ft_putchar_fd(c, fd);
-//	ft_putchar_fd('c', fd);
-//	ft_putchar_fd('1', fd);
-//	ft_putchar_fd('2', fd);
-//	ft_putchar_fd('7', fd);
+	
+//	[KO]: your putchar_fd does not work with unicode
+//	Test code:
+//		char buff[10];
+//		char buff2[10];
+//		int c = L'ø';
+//		int len = 0;
 //
-//	int close(int fd);
-//	if (fd == -1)
-//	{
-//		printf("%s\n", "ooops it is not CLOSED");
-//	}
-//	if (fd > 0)
-//	{
-//		printf("%s\n", "closed");
-//	}
+//		putwchart(c, &len, buff2);
+//		buff2[len] = 0;
+//		fd_to_buffer(2);
+//		ft_putchar_fd(c, 2);
+//		write(2, "", 1);
+//		get_fd_buffer(2, buff, 10);
+//		if (!strcmp(buff, buff2))
+//			exit(TEST_SUCCESS);
+//		exit(TEST_KO);
+	
+	
+	int fd = open("test_file.txt", O_RDWR | O_CREAT); //it is creating the file but I cannot open it
+	if (fd == -1)
+	{
+		printf("%s\n", "ooops it is not opened");
+	}
+	if (fd > 0)
+	{
+		printf("%s\n", "opened");
+	}
+	char c;
+	c = 'a';
+	ft_putchar_fd(c, fd);
+	ft_putchar_fd('c', fd);
+	ft_putchar_fd('1', fd);
+	ft_putchar_fd('2', fd);
+	ft_putchar_fd(L'ø', fd);
+
+	int close(int fd);
+	if (fd == -1)
+	{
+		printf("%s\n", "ooops it is not CLOSED");
+	}
+	if (fd > 0)
+	{
+		printf("%s\n", "closed");
+	}
 	
 }

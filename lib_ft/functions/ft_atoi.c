@@ -12,24 +12,6 @@
 
 #include "libft.h"
 
-//static	int ft_strlen_numbers(const char *str)
-//{
-//	int i;
-//	int len;
-//
-//	i = 0;
-//	len = 0;
-//	while (str[i] != 0)
-//	{
-//		if (str[i] >= '0' && str[i] <= '9')
-//		{
-//			len++;
-//		}
-//		i++;
-//	}
-//	return (len);
-//}
-
 int		ft_atoi(const char *str)
 {
 	int i;
@@ -49,46 +31,15 @@ int		ft_atoi(const char *str)
 	res = 0;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (res >  (2147483648 / 10) && n == -1)
-		{
+		if (res > (2147483648 / 10) && n == -1)
 			return (0);
-		}
 		if (res > (2147483647 / 10))
-		{
 			return (-1);
-		}
 		res = res * 10 + (str[i] - '0');
 		i++;
 	}
 	return (res * n);
 }
-
-//int		ft_atoi(const char *str)
-//{
-//	int i;
-//	int n;
-//	int res;
-//
-//	i = 0;
-//	while (str[i] == 32 || (str[i] >= 8 && str[i] <= 14))
-//		i++;
-//	n = 0;
-//	if ((str[i] == '-') || (str[i] == '+'))
-//	{
-//		if (str[i] == '-')
-//			n++;
-//		i++;
-//	}
-//	res = 0;
-//	while (str[i] >= '0' && str[i] <= '9')
-//	{
-//		res = res * 10 + (str[i] - '0');
-//		i++;
-//	}
-//	if (n == 1)
-//		res = res * -1;
-//	return (res);
-//}
 
 
 

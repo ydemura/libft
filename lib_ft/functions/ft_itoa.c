@@ -30,6 +30,8 @@ static	int		len_counter(int n)
 		n_check = n_check / 10;
 		len++;
 	}
+	if (len == 0)
+		len++;
 	return (len);
 }
 

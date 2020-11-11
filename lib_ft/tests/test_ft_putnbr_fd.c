@@ -12,8 +12,6 @@
 
 //Description Outputs the integer ’n’ to the given file descriptor.
 
-
-
 #include <stdio.h>
 #include "test_libft.h"
 #include<sys/types.h>
