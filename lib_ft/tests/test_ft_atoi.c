@@ -63,7 +63,7 @@ void	test_ft_atoi2(void)
 
 void	test_ft_atoi3(void)
 {
-	char n[] = "-2147483648"; //-2147483648 - max symbols 11
+	char n[] = "-99999999999999999999999999"; //-2147483648 - max symbols 11
 //	int i1 = atoi(n);
 //	int i2 = ft_atoi(n);
 //	printf("or: %i\nmy: %i\n", i1, i2);
@@ -81,12 +81,11 @@ void	test_ft_atoi4(void)
 
 void	test_ft_atoi(void)
 {
-//	test_ft_atoi1();
-//	test_ft_atoi2();
+	test_ft_atoi1();
+	test_ft_atoi2();
 	test_ft_atoi3();
 	test_ft_atoi4();
 }
-
 
 //int		ft_atoi(const char *str)
 //{

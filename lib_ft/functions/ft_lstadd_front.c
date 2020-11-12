@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstnew.c                                        :+:    :+:            */
+/*   ft_lstadd_front.c                                  :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: julia <julia@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
@@ -11,17 +11,5 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-t_list	*ft_lstnew(void *content)
-{
-	t_list	*next_list;
-	next_list = malloc(sizeof(t_list));
-	if (!next_list)
-	{
-		return (0);
-	}
-	next_list->content = content;
-	next_list->next = 0;
-	return (next_list);
-}
+void	ft_lstadd_front(t_list **lst, t_list *new);
