@@ -61,6 +61,8 @@ char			*ft_strtrim(char const *s1, char const *set)
 	int				start;
 	int				end;
 
+	if (!s1 || !set)
+		return (0);
 	start = ft_start_search(s1, set);
 	end = ft_end_search(s1, set);
 	len_s2 = end - start;

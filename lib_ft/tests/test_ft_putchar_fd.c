@@ -51,31 +51,31 @@ void	test_ft_putchar_fd(void)
 //		exit(TEST_KO);
 	
 	
-	int fd = open("test_file.txt", O_RDWR | O_CREAT); //it is creating the file but I cannot open it
-	if (fd == -1)
-	{
-		printf("%s\n", "ooops it is not opened");
-	}
-	if (fd > 0)
-	{
-		printf("%s\n", "opened");
-	}
-	char c;
-	c = 'a';
-	ft_putchar_fd(c, fd);
-	ft_putchar_fd('c', fd);
-	ft_putchar_fd('1', fd);
-	ft_putchar_fd('2', fd);
-	ft_putchar_fd(L'ø', fd);
-
-	int close(int fd);
-	if (fd == -1)
-	{
-		printf("%s\n", "ooops it is not CLOSED");
-	}
-	if (fd > 0)
-	{
-		printf("%s\n", "closed");
-	}
-	
+//	int fd = open("test_file.txt", O_RDWR | O_CREAT); //it is creating the file but I cannot open it
+//	if (fd == -1)
+//	{
+//		printf("%s\n", "ooops it is not opened");
+//	}
+//	if (fd > 0)
+//	{
+//		printf("%s\n", "opened");
+//	}
+//	char c;
+//	c = 'a';
+//	ft_putchar_fd(c, fd);
+//	ft_putchar_fd('c', fd);
+//	ft_putchar_fd('1', fd);
+//	ft_putchar_fd('2', fd);
+//	ft_putchar_fd(L'ø', fd);
+//
+//	int close(int fd);
+//	if (fd == -1)
+//	{
+//		printf("%s\n", "ooops it is not CLOSED");
+//	}
+//	if (fd > 0)
+//	{
+//		printf("%s\n", "closed");
+//	}
+//
 }

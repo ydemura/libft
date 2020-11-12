@@ -18,6 +18,8 @@ static int		ft_substr_number(char const *s, char c)
 	int		n_substr;
 	int		i;
 
+	if (!s)
+		return (0);
 	n_substr = 0;
 	i = 0;
 	while (s[i] != '\0')

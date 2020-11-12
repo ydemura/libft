@@ -26,7 +26,7 @@ void	test_ft_memccpy1(void)
 	char *result;
 	result = ft_memccpy(dest, source, c, 2);
 
-	assert(ft_strncmp(dest, "ab3456789", ft_strlen(dest)) == 0);
+	assert(strcmp(dest, "ab3456789") == 0);
 	assert(result == NULL);
 }
 
@@ -38,8 +38,8 @@ void	test_ft_memccpy2(void)
 	char *result;
 	result = ft_memccpy(dest, source, c, 6);
 
-	assert(ft_strncmp(dest, "abx456789", ft_strlen(dest)) == 0);
-	assert(ft_strncmp(result, "456789", ft_strlen(result)) == 0);
+	assert(strcmp(dest, "abx456789") == 0);
+	assert(strcmp(result, "456789") == 0);
 }
 
 void	test_ft_memccpy3(void)

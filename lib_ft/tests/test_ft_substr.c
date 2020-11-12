@@ -28,7 +28,7 @@ void	test_ft_substr1(void)
 	int len = 4;
 	sub_str = ft_substr(s, start, len);
 
-	assert(ft_strncmp(sub_str, "test", 10) == 0);
+	assert(strcmp(sub_str, "test") == 0);
 	
 }
 

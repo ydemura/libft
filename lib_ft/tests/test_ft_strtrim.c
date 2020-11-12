@@ -24,7 +24,7 @@ void	test_ft_strtrim1(void)
 	new_str = ft_strtrim(s1, set);
 
 //	printf("string: %s\nset: %s\nafter f: %s\n", s1, set, new_str);
-	assert(ft_strncmp(new_str, "string", 20) == 0);
+	assert(strcmp(new_str, "string") == 0);
 }
 
 void	test_ft_strtrim2(void)
@@ -36,7 +36,7 @@ void	test_ft_strtrim2(void)
 	new_str = ft_strtrim(s1, set);
 
 //	printf("string:%s\nset:%s\nafter f:%s\n", s1, set, new_str);
-	assert(ft_strncmp(new_str, "stAriIng", 20) == 0);
+	assert(strcmp(new_str, "stAriIng") == 0);
 }
 
 void	test_ft_strtrim3(void)
@@ -48,7 +48,7 @@ void	test_ft_strtrim3(void)
 	new_str = ft_strtrim(s1, set);
 
 //	printf("string:%s\nset:%s\nafter f:%s\n", s1, set, new_str);
-	assert(ft_strncmp(new_str, "stAriIng", 20) == 0);
+	assert(strcmp(new_str, "stAriIng") == 0);
 }
 
 void	test_ft_strtrim4(void)
@@ -60,7 +60,7 @@ void	test_ft_strtrim4(void)
 	new_str = ft_strtrim(s1, set);
 
 //	printf("string:%s\nset:%s\nafter f:%s\n", s1, set, new_str);
-	assert(ft_strncmp(new_str, "stAriIng", 10) == 0);
+	assert(strcmp(new_str, "stAriIng") == 0);
 }
 
 void	test_ft_strtrim5(void)
@@ -72,7 +72,7 @@ void	test_ft_strtrim5(void)
 	new_str = ft_strtrim(s1, set);
 
 //	printf("string:%s\nset:%s\nafter f:%s\n", s1, set, new_str);
-	assert(ft_strncmp(new_str, "st?ri00000n!g", 15) == 0);
+	assert(strcmp(new_str, "st?ri00000n!g") == 0);
 }
 
 void	test_ft_strtrim6(void)

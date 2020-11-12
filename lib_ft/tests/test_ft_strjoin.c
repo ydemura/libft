@@ -23,7 +23,7 @@ void	test_ft_strjoin(void)
 	new_str = ft_strjoin(s1, s2);
 
 //	printf("%s\n%s\n%s\n", s1, s2, new_str);
-	assert(ft_strncmp(new_str, "aaabbb", 10) == 0);
+	assert(strcmp(new_str, "aaabbb") == 0);
 }
 
    

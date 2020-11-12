@@ -44,7 +44,7 @@ void	test_ft_strmapi1(void)
 	s = "testthisstring";
 	result = ft_strmapi(s, *give_five);
 	//printf("%s\n", result);
-	assert(ft_strncmp(result, "0estt5isstring", 20) == 0);
+	assert(strcmp(result, "0estt5isstring") == 0);
 }
 
 void	test_ft_strmapi2(void)
@@ -55,7 +55,7 @@ void	test_ft_strmapi2(void)
 	s = "testthisstring";
 	result = ft_strmapi(s, *capitalise_odd);
 	//printf("%s\n", result);
-	assert(ft_strncmp(result, "TeStThIsStRiNg", 20) == 0);
+	assert(strcmp(result, "TeStThIsStRiNg") == 0);
 }
 
 void	test_ft_strmapi3(void)
@@ -66,7 +66,7 @@ void	test_ft_strmapi3(void)
 	s = "";
 	result = ft_strmapi(s, *give_five);
 	//printf("%s\n", result);
-	assert(ft_strncmp(result, "", 20) == 0);
+	assert(strcmp(result, "") == 0);
 }
 
 void	test_ft_strmapi(void)

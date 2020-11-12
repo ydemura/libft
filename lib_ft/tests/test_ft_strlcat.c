@@ -30,7 +30,7 @@ void	test_ft_strlcat1(void)
 	//printf("my: %s\nor: %s\n", dst, dst1);
 	//assert(ft_strlcat(dst, src, destsize) == 18);
 	//printf("my: %s\nor: %s\n", dst, dst1);
-	assert(ft_memcmp(dst, "destination/aaaaaa", 20) == ft_memcmp(dst1, "destination/aaaaaa", 20));
+	assert(memcmp(dst, "destination/aaaaaa", 20) == memcmp(dst1, "destination/aaaaaa", 20));
 }
 
 void	test_ft_strlcat2(void)
@@ -45,7 +45,7 @@ void	test_ft_strlcat2(void)
 	//printf("my: %s\nor: %s\n", dst, dst1);
 	//assert(ft_strlcat(dst, src, destsize) == 18);
 	//printf("my: %s\nor: %s\n", dst, dst1);
-	assert(ft_memcmp(dst, "destination/aaaaaa", 20) == ft_memcmp(dst1, "destination/aaaaaa", 20));
+	assert(memcmp(dst, "destination/aaaaaa", 20) == memcmp(dst1, "destination/aaaaaa", 20));
 }
 
 void	test_ft_strlcat3(void)
@@ -60,7 +60,7 @@ void	test_ft_strlcat3(void)
 	//printf("my: %s\nor: %s\n", dst, dst1);
 	//assert(ft_strlcat(dst, src, destsize) == 18);
 	//printf("my: %s\nor: %s\n", dst, dst1);
-	assert(ft_memcmp(dst, "destination/aaaaaa", 20) == ft_memcmp(dst1, "destination/aaaaaa", 20));
+	assert(memcmp(dst, "destination/aaaaaa", 20) == memcmp(dst1, "destination/aaaaaa", 20));
 }
 
 void	test_ft_strlcat4(void)
@@ -75,7 +75,7 @@ void	test_ft_strlcat4(void)
 	//printf("my: %s\nor: %s\n", dst, dst1);
 	//assert(ft_strlcat(dst, src, destsize) == 18);
 	//printf("my: %s\nor: %s\n", dst, dst1);
-	assert(ft_memcmp(dst, "destination/aaaaaa", 20) == ft_memcmp(dst1, "destination/aaaaaa", 20));
+	assert(memcmp(dst, "destination/aaaaaa", 20) == memcmp(dst1, "destination/aaaaaa", 20));
 }
 
 void	test_ft_strlcat5(void)
