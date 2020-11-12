@@ -15,11 +15,11 @@
 
 # include <sys/types.h>
 
-typedef struct	s_list
+typedef	struct	s_list
 {
-	void 		*content;
-	struct 		s_list *next;
-} 				t_list;
+	void		*content;
+	struct s_list *next;
+}				t_list;
 
 int		ft_strlen(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
