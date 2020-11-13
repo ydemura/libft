@@ -15,6 +15,9 @@
 
 //Description Allocates (with malloc(3)) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL.
 
+//. - Member operator
+//-> - Structure pointer operator
+
 //typedef struct	s_list
 //{
 //	void 		*content;
@@ -59,3 +62,25 @@ void	test_ft_lstnew(void)
 	test_ft_lstnew1();
 	test_ft_lstnew2();
 }
+
+
+// EXAMPLE
+//t_list	*ft_lstnew(void *content)
+//{
+//	t_list *try_list;
+//
+//	(*try_list).content = content;
+//	(*try_list).next = NULL;
+//
+//
+//	t_list	*next_list;
+//
+//	next_list = malloc(sizeof(t_list));
+//	if (!next_list)
+//	{
+//		return (0);
+//	}
+//	next_list->content = content;
+//	next_list->next = NULL;
+//	return (next_list);
+//}

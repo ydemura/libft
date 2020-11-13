@@ -18,6 +18,12 @@
 //. - Member operator
 //-> - Structure pointer operator (will be discussed in the next tutorial)
 
+//typedef struct	s_list
+//{
+//	void 		*content;
+//	struct 		s_list *next;
+//} 				t_list;
+
 #include "test_libft.h"
 #include <stdio.h>
 
