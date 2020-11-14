@@ -6,7 +6,7 @@
 #    By: ydemura <ydemura@student.codam.nl>           +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/12 21:16:31 by ydemura       #+#    #+#                  #
-#    Updated: 2020/11/14 15:42:19 by ydemura       ########   odam.nl          #
+#    Updated: 2020/11/14 18:48:07 by ydemura       ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,9 +17,11 @@ ft_memmove.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c\
 ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c ft_strdup.c\
 ft_substr.c ft_strjoin.c ft_split.c ft_strtrim.c ft_itoa.c ft_strmapi.c\
 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+
 OBJ_SRCS = $(SRCS:.c=.o)
 BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
-ft_lstadd_back.c
+ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
+
 OBJ_BONUS = $(BONUS_SRCS:.c=.o)
 LIBC = ar -rcs
 FLAGS = -Wall -Wextra -Werror
@@ -43,11 +45,13 @@ bonus:
 	$(MAKE) BONUS=1 all
 
 clean:
-	rm -f *.o
+	rm -f $(OBJ_SRCS) $(OBJ_BONUS)
 
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean all
+re:
+	$(MAKE) fclean
+	$(MAKE) all
 
 .PHONY: all clean fclean re

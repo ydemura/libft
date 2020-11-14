@@ -11,8 +11,6 @@
 //Counts the number of elements in a list.
 
 
-
-
 #include "test_libft.h"
 #include <stdio.h>
 
