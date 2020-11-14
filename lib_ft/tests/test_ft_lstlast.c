@@ -15,9 +15,8 @@
 
 void	test_ft_lstlast(void)
 {
-
+	
 }
-
 
 //t_list *ft_lst_last(t_list *lst)
 //{

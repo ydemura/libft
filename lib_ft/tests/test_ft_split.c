@@ -139,6 +139,18 @@ void	test_ft_split5(void)
 	//assert(ft_strncmp(result[5], (null), 6) == 0);
 }
 
+void	test_ft_split6(void)
+{
+	char s2[] = "helloworld"; // the last + first delimeter is an issue + more then 1 delimeter is an issue
+	char c2 = '|';
+	char **result;
+
+	result = ft_split(s2, c2);
+
+//	printf("%s%s%s%s%s", result[0], result[1], result[2], result[3], result[4]);
+	assert(strcmp(result[0], "helloworld") == 0);
+}
+
 void	test_ft_split(void)
 {
 	test_ft_split1();
@@ -146,6 +158,7 @@ void	test_ft_split(void)
 	test_ft_split3();
 	test_ft_split4();
 	test_ft_split5();
+	test_ft_split6();
 }
 
 

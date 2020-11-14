@@ -46,6 +46,7 @@ int main()
 	test_ft_lstadd_front();
 	test_ft_lstsize();
 	test_ft_lstlast();
+	test_ft_lstadd_back();
 	
 	
 	
