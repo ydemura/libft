@@ -6,12 +6,13 @@
 /*   By: ydemura <ydemura@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/01 09:04:16 by ydemura       #+#    #+#                 */
-/*   Updated: 2020/11/01 09:55:08 by ydemura       ########   odam.nl         */
+/*   Updated: 2020/11/15 20:00:33 by ydemura       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 static	int		len_counter(int n)
 {
@@ -32,6 +33,7 @@ static	int		len_counter(int n)
 	}
 	if (len == 0)
 		len++;
+	printf("%i", len);
 	return (len);
 }
 
@@ -99,3 +101,24 @@ char			*ft_itoa(int n)
 	s = ft_strrev(s);
 	return (s);
 }
+
+//int main()
+//{
+//	int n;
+//	char *s;
+//	
+//	n = -180525;
+//	s = ft_itoa(n);
+//
+//	printf("%s\n", s);
+//
+//	n = -770126;
+//	s = ft_itoa(n);
+//
+//	printf("%s\n", s);
+//
+//		n = -859058;
+//	s = ft_itoa(n);
+//
+//	printf("%s\n", s);
+//}

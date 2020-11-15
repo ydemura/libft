@@ -26,7 +26,6 @@
 		0D061946254F2191008C91AD /* test_ft_strtrim.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D061945254F2191008C91AD /* test_ft_strtrim.c */; };
 		0D11DD6B255D7B09006BE881 /* ft_lstnew.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D11DD6A255D7B09006BE881 /* ft_lstnew.c */; };
 		0D11DD6D255D7B23006BE881 /* test_ft_lstnew.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D11DD6C255D7B23006BE881 /* test_ft_lstnew.c */; };
-		0D381B172553F5FA0038C1D8 /* ft_itoa.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D381B162553F5FA0038C1D8 /* ft_itoa.c */; };
 		0D381B192553F65B0038C1D8 /* test_ft_itoa.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D381B182553F65B0038C1D8 /* test_ft_itoa.c */; };
 		0D381B1B25544B0B0038C1D8 /* ft_strmapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D381B1A25544B0B0038C1D8 /* ft_strmapi.c */; };
 		0D381B1D25544B630038C1D8 /* test_ft_strmapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D381B1C25544B630038C1D8 /* test_ft_strmapi.c */; };
@@ -49,6 +48,7 @@
 		0D715E8B255498A900A15141 /* test_ft_putnbr_fd.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D715E8A255498A900A15141 /* test_ft_putnbr_fd.c */; };
 		0DE8850425600766000D08AE /* ft_lstadd_back.c in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8850325600766000D08AE /* ft_lstadd_back.c */; };
 		0DE885062560079F000D08AE /* test_ft_lstadd_back.c in Sources */ = {isa = PBXBuildFile; fileRef = 0DE885052560079F000D08AE /* test_ft_lstadd_back.c */; };
+		0DF530232561B5D1005BC919 /* ft_itoa.c in Sources */ = {isa = PBXBuildFile; fileRef = 0DF530222561B5D0005BC919 /* ft_itoa.c */; };
 		A3577E98255F35AF004977E1 /* ft_lstsize.c in Sources */ = {isa = PBXBuildFile; fileRef = A3577E97255F35AF004977E1 /* ft_lstsize.c */; };
 		A3577E9C255F35C3004977E1 /* test_ ft_lstsize.c in Sources */ = {isa = PBXBuildFile; fileRef = A3577E9B255F35C3004977E1 /* test_ ft_lstsize.c */; };
 		A3577E9F255F39A4004977E1 /* ft_lstlast.c in Sources */ = {isa = PBXBuildFile; fileRef = A3577E9E255F39A4004977E1 /* ft_lstlast.c */; };
@@ -128,7 +128,6 @@
 		0D11DD63255D6784006BE881 /* Makefile copy */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Makefile copy"; sourceTree = SOURCE_ROOT; };
 		0D11DD6A255D7B09006BE881 /* ft_lstnew.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstnew.c; sourceTree = "<group>"; };
 		0D11DD6C255D7B23006BE881 /* test_ft_lstnew.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_lstnew.c; sourceTree = "<group>"; };
-		0D381B162553F5FA0038C1D8 /* ft_itoa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_itoa.c; sourceTree = "<group>"; };
 		0D381B182553F65B0038C1D8 /* test_ft_itoa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_itoa.c; sourceTree = "<group>"; };
 		0D381B1A25544B0B0038C1D8 /* ft_strmapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strmapi.c; sourceTree = "<group>"; };
 		0D381B1C25544B630038C1D8 /* test_ft_strmapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_strmapi.c; sourceTree = "<group>"; };
@@ -151,6 +150,7 @@
 		0D715E8A255498A900A15141 /* test_ft_putnbr_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_putnbr_fd.c; sourceTree = "<group>"; };
 		0DE8850325600766000D08AE /* ft_lstadd_back.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstadd_back.c; sourceTree = "<group>"; };
 		0DE885052560079F000D08AE /* test_ft_lstadd_back.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ft_lstadd_back.c; sourceTree = "<group>"; };
+		0DF530222561B5D0005BC919 /* ft_itoa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_itoa.c; sourceTree = "<group>"; };
 		A3577E96255F3335004977E1 /* libft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libft.h; sourceTree = "<group>"; };
 		A3577E97255F35AF004977E1 /* ft_lstsize.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstsize.c; sourceTree = "<group>"; };
 		A3577E9B255F35C3004977E1 /* test_ ft_lstsize.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "test_ ft_lstsize.c"; sourceTree = "<group>"; };
@@ -249,6 +249,7 @@
 				A3A66AB1254C1F2200423CEB /* ft_isalpha.c */,
 				A3A66AA5254C1F2200423CEB /* ft_isascii.c */,
 				A3A66AAD254C1F2200423CEB /* ft_isdigit.c */,
+				0DF530222561B5D0005BC919 /* ft_itoa.c */,
 				A3A66AAF254C1F2200423CEB /* ft_isprint.c */,
 				A3A66B09254DFBA400423CEB /* ft_memccpy.c */,
 				A3A66B08254DFBA400423CEB /* ft_memchr.c */,
@@ -270,7 +271,6 @@
 				0D06193F254F15A1008C91AD /* ft_strjoin.c */,
 				A3A66B1725531DF400423CEB /* ft_split.c */,
 				0D061943254F214C008C91AD /* ft_strtrim.c */,
-				0D381B162553F5FA0038C1D8 /* ft_itoa.c */,
 				0D381B1A25544B0B0038C1D8 /* ft_strmapi.c */,
 				0D715E7F25548EE000A15141 /* ft_putstr_fd.c */,
 				0D715E832554953E00A15141 /* ft_putendl_fd.c */,
@@ -366,6 +366,9 @@
 		A3A66A2825481CA400423CEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					A3A66A2F25481CA400423CEB = {
@@ -439,6 +442,7 @@
 				0D381B192553F65B0038C1D8 /* test_ft_itoa.c in Sources */,
 				A3A66ABB254C1F2200423CEB /* ft_isalnum.c in Sources */,
 				A3A66AD8254C1F3600423CEB /* test_ft_memset.c in Sources */,
+				0DF530232561B5D1005BC919 /* ft_itoa.c in Sources */,
 				0D693870256049F600DF0177 /* test_ft_lstclear.c in Sources */,
 				0D061934254EBB60008C91AD /* test_ft_strlcat.c in Sources */,
 				0D715E862554954D00A15141 /* test_ft_putendl_fd.c in Sources */,
@@ -495,7 +499,6 @@
 				A3A66B0D254DFBA400423CEB /* ft_memmove.c in Sources */,
 				A3A66ABC254C1F2200423CEB /* ft_isdigit.c in Sources */,
 				A3577E9C255F35C3004977E1 /* test_ ft_lstsize.c in Sources */,
-				0D381B172553F5FA0038C1D8 /* ft_itoa.c in Sources */,
 				0D06192E254EBAC3008C91AD /* test_ft_calloc.c in Sources */,
 				A3A66AE8254C218200423CEB /* ft_strrchr.c in Sources */,
 				A3A66B03254DFB7200423CEB /* test_ft_memcpy.c in Sources */,
@@ -625,7 +628,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = "-Wwrite-strings";
+				WARNING_CFLAGS = (
+					"-Wwrite-strings",
+					"-Werror",
+					"-Wextra",
+					"-Wall",
+				);
 			};
 			name = Debug;
 		};
@@ -635,7 +643,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = "-Wwrite-strings";
+				WARNING_CFLAGS = (
+					"-Wwrite-strings",
+					"-Werror",
+					"-Wextra",
+					"-Wall",
+				);
 			};
 			name = Release;
 		};
