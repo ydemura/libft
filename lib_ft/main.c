@@ -50,9 +50,7 @@ int main()
 	test_ft_lstdelone();
 	test_ft_lstclear();
 	test_ft_lstiter();
-	
-	
-	
+	test_ft_lstmap();
 	
 //	char s[] = "1234test9";
 //	char *sub_str;

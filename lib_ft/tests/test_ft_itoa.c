@@ -114,8 +114,8 @@ void	test_ft_itoa7(void)
 	n = -180525;
 	s = ft_itoa(n);
 	
-	printf("%s\n", s);
-	//assert(strcmp(s, "-180525") == 0);
+	//printf("%s\n", s);
+	assert(strcmp(s, "-180525") == 0);
 }
 
 void	test_ft_itoa8(void)
@@ -126,8 +126,8 @@ void	test_ft_itoa8(void)
 	n = -770126;
 	s = ft_itoa(n);
 	
-	printf("%s\n", s);
-	//assert(strcmp(s, "-770126") == 0);
+	//printf("%s\n", s);
+	assert(strcmp(s, "-770126") == 0);
 }
 
 void	test_ft_itoa9(void)
@@ -138,18 +138,18 @@ void	test_ft_itoa9(void)
 	n = -859058;
 	s = ft_itoa(n);
 	
-	printf("%s\n", s);
-	//assert(strcmp(s, "-859058") == 0);
+	//printf("%s\n", s);
+	assert(strcmp(s, "-859058") == 0);
 }
 
 void	test_ft_itoa(void)
 {
-//	test_ft_itoa1();
-//	test_ft_itoa2();
-//	test_ft_itoa3();
-//	test_ft_itoa4();
-//	test_ft_itoa5();
-//	test_ft_itoa6();
+	test_ft_itoa1();
+	test_ft_itoa2();
+	test_ft_itoa3();
+	test_ft_itoa4();
+	test_ft_itoa5();
+	test_ft_itoa6();
 	test_ft_itoa7();
 	test_ft_itoa8();
 	test_ft_itoa9();

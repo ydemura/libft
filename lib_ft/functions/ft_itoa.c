@@ -12,7 +12,6 @@
 
 #include "libft.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 static	int		len_counter(int n)
 {
@@ -23,17 +22,16 @@ static	int		len_counter(int n)
 	n_check = n;
 	if (n < 0)
 	{
-		n_check = n * -1;
+		n_check = -n;
 		len++;
 	}
-	while (n_check % 10 > 0)
+	while (n_check > 0)
 	{
 		n_check = n_check / 10;
 		len++;
 	}
 	if (len == 0)
 		len++;
-	printf("%i", len);
 	return (len);
 }
 
@@ -101,24 +99,3 @@ char			*ft_itoa(int n)
 	s = ft_strrev(s);
 	return (s);
 }
-
-//int main()
-//{
-//	int n;
-//	char *s;
-//	
-//	n = -180525;
-//	s = ft_itoa(n);
-//
-//	printf("%s\n", s);
-//
-//	n = -770126;
-//	s = ft_itoa(n);
-//
-//	printf("%s\n", s);
-//
-//		n = -859058;
-//	s = ft_itoa(n);
-//
-//	printf("%s\n", s);
-//}

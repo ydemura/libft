@@ -17,12 +17,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	unsigned	int		i;
 	unsigned	int		j;
 	char				*ptr_haystack;
-	char				*ptr_needle;
 
 	i = 0;
 	j = 0;
 	ptr_haystack = (char *)haystack;
-	ptr_needle = (char *)needle;
 	if (needle[j] == 0)
 		return (ptr_haystack);
 	while ((haystack[i] != '\0') && (i < len))

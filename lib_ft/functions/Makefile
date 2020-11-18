@@ -6,7 +6,7 @@
 #    By: ydemura <ydemura@student.codam.nl>           +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/12 21:16:31 by ydemura       #+#    #+#                  #
-#    Updated: 2020/11/14 20:53:53 by ydemura       ########   odam.nl          #
+#    Updated: 2020/11/18 16:15:18 by julia         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 OBJ_SRCS = $(SRCS:.c=.o)
 BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
-ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
+ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJ_BONUS = $(BONUS_SRCS:.c=.o)
 LIBC = ar -rcs
