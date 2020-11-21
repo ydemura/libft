@@ -34,11 +34,17 @@ void	test_ft_substr1(void)
 
 void	test_ft_substr2(void)
 {
+	char s[] = "ABC";
+	char *sub_str;
+	int start = 2; //it is INDEX (ind 4 == int 5)
+	size_t len = 500000000000;
+	sub_str = ft_substr(s, start, len);
 
+	assert(strcmp(sub_str, "C") == 0);
 }
 
 void	test_ft_substr(void)
 {
 	//test_ft_substr1();
-	//test_ft_substr2();
+	test_ft_substr2();
 }

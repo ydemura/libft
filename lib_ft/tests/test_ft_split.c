@@ -119,17 +119,17 @@ void	test_ft_split5(void)
 {
 	
 //	"....split..it.for...me...!..."
-	char s2[] = "....split..it.for...me...!";
-	char c2 = '.';
+	char s2[] = "....split\0..it.for\0...me...!";
+	char c2 = '\0';
 	char **result;
 
 	result = ft_split(s2, c2);
-//	int n = 0;
-//	while (result[n] != 0)
-//	{
-//		printf("%s\n", result[n]);
-//		n++;
-//	}
+	int n = 0;
+	while (result[n] != 0)
+	{
+		printf("%s\n", result[n]);
+		n++;
+	}
 
 //	assert(strcmp(result[0], "split") == 0);
 //	assert(strcmp(result[1], "it") == 0);
