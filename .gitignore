@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Custom
+*.o
+*.DS_Store
+**/*.o
+**/*.DS_Store
