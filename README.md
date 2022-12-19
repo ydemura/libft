@@ -3,6 +3,8 @@
 This project is about coding a C library.
 
 library contains functions that are duplicating behavious listed below functions:
+
+
 • isalpha
 • isdigit
 • isalnum
