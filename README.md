@@ -1,5 +1,5 @@
 Libft (C)
-Created a small library of utility functions for C programming
+Created a small library of utility functions for C programming and test functions
 
 Skills: 
-Data Structures ; Makefile
+Data Structures ; Makefile ; basic unit tests 
